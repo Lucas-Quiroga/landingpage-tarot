@@ -28,6 +28,27 @@
   color: #61dafb;
 }
 
+.parent {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(3, 1fr) 3fr 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.div1 {
+  grid-area: 1 / 1 / 2 / 6;
+  background-color: red;
+}
+.div2 {
+  grid-area: 2 / 1 / 5 / 6;
+  background-color: blue;
+}
+.div3 {
+  grid-area: 5 / 1 / 6 / 6;
+  background-color: green;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
