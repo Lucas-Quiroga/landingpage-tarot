@@ -1,15 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./navbar.css";
-import NavScript from "./NavScript";
 
 const Navbar = () => {
+  const [active, setActive] = useState(false);
+
+  const handleClick = () => {
+    setActive(!active);
+  };
+
   return (
     <nav className="navbar-container">
       <div className="toggle menu">
-        <i className="fa fa-bars">hola</i>
+        <i className="fa fa-bars" onClick={handleClick}>
+          hola
+        </i>
       </div>
-      <ul>
+      <ul className={active ? "active" : ""}>
         <li>
           <Link to={"/"} className="a">
             Icon
@@ -31,7 +38,6 @@ const Navbar = () => {
           </Link>
         </li>
       </ul>
-      <navScript />
     </nav>
   );
 };
