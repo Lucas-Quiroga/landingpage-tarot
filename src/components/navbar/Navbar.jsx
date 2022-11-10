@@ -12,7 +12,7 @@ const Navbar = () => {
   return (
     <nav className="navbar-container">
       <div className="toggle menu">
-        <i className="fa fa-bars" onClick={handleClick}>
+        <i className="bx bx-menu" onClick={handleClick}>
           hola
         </i>
       </div>
