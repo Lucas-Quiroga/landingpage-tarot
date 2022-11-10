@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  width: 100%;
+  background-color: #002288;
+  min-height: 3em;
+}
+
+ul {
+  width: 100%;
+  text-align: center;
+}
+
+li {
+  list-style: none;
+  display: inline-block;
+  padding: 1.7rem;
+}
+
+.a {
+  text-decoration: none;
+  font-family: 'roboto';
+  font-size: 1.1rem;
+  color: azure;
+  text-transform: uppercase;
+}
+
+ul li:hover {
+  background: rebeccapurple;
+  transition: all 0.5s ease-in-out;
+}
+
+.toggle {
+  width: 100%;
+  font-size: 2rem;
+  text-align: right;
+  padding: 20px;
+  color: azure;
+  cursor: pointer;
+  display: none;
+  background: #000;
+}
+
+@media (max-width: 800px) {
+  .toggle {
+    display: inline-block;
+  }
+
+  ul {
+    width: 100%;
+    display: none;
+  }
+
+  ul li {
+    display: block;
+    text-align: center;
+  }
+
+  .active {
+    display: block;
+  }
+}
