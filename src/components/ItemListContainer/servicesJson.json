@@ -1,0 +1,32 @@
+[
+    {
+      "id": 1,
+      "name": "Lectura de tarot",
+      "price": 2500,
+      "information":
+        "Método de consulta e interpretación de hechos del pasado, presente y futuro.",
+      "modality": "Presencial o Virtual"
+    },
+    {"id": 2,
+      "name": "Limpieza energética",
+      "price": 1700,
+      "information":
+        "Se utiliza un péndulo para detectar alteraciones vibracionales en el cuerpo energético, para luego corregirlas eliminando bloqueos y reparando circuitos. Como resultado, la energía vuelve a fluir de manera libre y equilibrada.",
+      "modality": "Presencial o Virtual"
+    },
+    {"id": 3,
+      "name": "Reiki",
+      "price": 1700,
+      "information":
+        "Técnica mediante la cual un Maestro de Reiki canaliza y transmite energía utilizando sus manos.Busca obtener paz y equilibrio a nivel físico, mental, emocional y espiritual.",
+      "modality": "Presencial"
+    },
+    {"id": 4,
+      "name": "Terapia de sanación",
+      "price": 1300,
+      "information":
+        "Consta de 3 sesiones en las que se busca sanar a través de oraciones y de manera integral al cuerpo espiritual, mental, emocional y físico.Restablece el equilibrio y armonía de los 7 Chakras.",
+      "modality": "Presencial o Virtual"
+    }
+  ]
+  
