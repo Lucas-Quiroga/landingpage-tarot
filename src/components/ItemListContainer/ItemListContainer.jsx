@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import servicesJson from "./servicesJson.json";
+import ItemList from "./ItemList/ItemList";
 
 const ItemListContainer = () => {
   const [services, setServices] = useState([]);
@@ -14,9 +15,7 @@ const ItemListContainer = () => {
     });
   }, []);
 
-  console.log(services);
-
-  return <div>ItemListContainer</div>;
+  return <ItemList services={services} />;
 };
 
 export default ItemListContainer;
