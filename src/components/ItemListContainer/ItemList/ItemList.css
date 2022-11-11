@@ -1,0 +1,13 @@
+.divItemList {
+  display: flex;
+  position: relative;
+  bottom: 1em;
+  justify-content: center;
+}
+
+.mapStyle {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+}

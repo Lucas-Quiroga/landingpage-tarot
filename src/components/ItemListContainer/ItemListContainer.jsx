@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import servicesJson from "./servicesJson.json";
 import ItemList from "./ItemList/ItemList";
 
@@ -9,11 +9,9 @@ const ItemListContainer = () => {
     resolve(servicesJson);
   });
 
-  useEffect(() => {
-    promiseServices.then((resolve) => {
-      setServices(resolve);
-    });
-  }, []);
+  promiseServices.then(function (value) {
+    setServices(value);
+  });
 
   return <ItemList services={services} />;
 };
