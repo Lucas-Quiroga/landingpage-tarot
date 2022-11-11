@@ -10,8 +10,17 @@
 
 .card {
   margin: 3em 1em;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 10 auto;
 }
 
 .card-title {
   font-size: 1em;
+}
+
+.Information{
+    word-wrap: break-word;
+    font-size: 0.1rem;
 }

@@ -8,8 +8,8 @@ function App() {
     <BrowserRouter>
       <Header />
       <Routes>
-        <Route path="/" element={<ItemListContainer />} />
-        <Route path="/servicios" element="servicios" />
+        <Route path="/" element={"home"} />
+        <Route path="/servicios" element={<ItemListContainer />} />
         <Route path="/servicios/:serviceId" element="servicio" />
         <Route path="/cursos" element="curso" />
       </Routes>
