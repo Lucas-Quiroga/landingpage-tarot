@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import servicesJson from "./servicesJson.json";
+import ItemDetail from "./ItemDetail/ItemDetail";
 
 const ItemDetailContainer = () => {
   const [json, setJson] = useState({});
@@ -13,14 +14,7 @@ const ItemDetailContainer = () => {
     getJson.then((resolve) => setJson(resolve));
   }, []);
 
-  console.log(json);
-  return (
-    <div>
-      {json.map((resp) => (
-        <li>{json.name}</li>
-      ))}
-    </div>
-  );
+  return <ItemDetail json={json} />;
 };
 
 export default ItemDetailContainer;

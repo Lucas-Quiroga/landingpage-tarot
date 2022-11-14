@@ -1,0 +1,14 @@
+.detailObjContainer {
+  display: flex;
+  justify-content: center;
+  border: 2px solid black;
+  margin: 10px 25em;
+  position: relative;
+  top: 10em;
+}
+
+.detailObjChildren {
+  justify-content: center;
+  text-align: center;
+  padding: 8em 5em;
+}
