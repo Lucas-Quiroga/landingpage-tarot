@@ -6,7 +6,7 @@
 
 nav {
   width: 100%;
-  background-color: #002288;
+  background-color: #b17cc4;
   min-height: 3em;
 }
 
@@ -23,7 +23,7 @@ li {
 
 .a {
   text-decoration: none;
-  font-family: 'roboto';
+  font-family: "roboto";
   font-size: 1.1rem;
   color: azure;
   text-transform: uppercase;
