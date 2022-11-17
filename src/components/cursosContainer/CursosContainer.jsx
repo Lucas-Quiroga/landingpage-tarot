@@ -26,7 +26,7 @@ let cursosArray = [
 ];
 
 const CursosContainer = () => {
-  const [cursos, setCursos] = useState({});
+  const [cursos, setCursos] = useState([]);
 
   const getCursos = new Promise((resolve, reject) => {
     resolve(cursosArray);

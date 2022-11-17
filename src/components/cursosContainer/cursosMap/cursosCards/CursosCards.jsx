@@ -8,7 +8,9 @@ const CursosCards = ({ cursos }) => {
         <h3>Clases: {cursos.clases}</h3>
         <h4>Duración: {cursos.duración}</h4>
         <h2>Precio: {cursos.precio}</h2>
-        <button>Comprar</button>
+        <a href="https://mpago.la/2YrKJ84" target="_blank">
+          <button>Comprar</button>
+        </a>
       </div>
     </div>
   );

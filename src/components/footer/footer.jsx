@@ -1,55 +1,56 @@
 import React from "react";
 import "./footer.css";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
     <footer>
-      <div class="top_header">
+      <div className="top_header">
         <section>
           <span>
-            <i class="fa fa-map-marker"></i>
+            <i className="fa fa-map-marker"></i>
           </span>
           <span>Street, full address, state/province, country, pincode</span>
         </section>
         <section>
           <span>
-            <i class="fa fa-phone"></i>
+            <i className="fa fa-phone"></i>
           </span>
           <span>(00) 0000 0000</span>
         </section>
         <section>
           <span>
-            <i class="fa fa-envelope"></i>
+            <i className="fa fa-envelope"></i>
           </span>
           <span>info@websitename.com</span>
         </section>
       </div>
-      <span class="border-shape"></span>
-      <div class="bottom_content">
+      <span className="border-shape"></span>
+      <div className="bottom_content">
         <section>
           <a>
-            <i class="fa fa-facebook"></i>
+            <i className="fa fa-facebook"></i>
           </a>
           <a>
-            <i class="fa fa-instagram"></i>
+            <i className="fa fa-instagram"></i>
           </a>
           <a>
-            <i class="fa fa-twitter"></i>
+            <i className="fa fa-twitter"></i>
           </a>
           <a>
-            <i class="fa fa-telegram"></i>
+            <i className="fa fa-telegram"></i>
           </a>
         </section>
         <section>
-          <a>Home</a>
-          <a>About us</a>
-          <a>Order</a>
-          <a>Retail</a>
-          <a>Member</a>
-          <a>Contact Us</a>
+          <Link to={"/"}>Home</Link>
+          <Link to={"/"}>About us</Link>
+          <Link to={"/"}>Order</Link>
+          <Link to={"/"}>Retail</Link>
+          <Link to={"/"}>Member</Link>
+          <Link to={"/"}>Contact Us</Link>
         </section>
       </div>
-      <div class="copyright">
+      <div className="copyright">
         Copyright © 2021 websitename - All rights reserved
       </div>
     </footer>
