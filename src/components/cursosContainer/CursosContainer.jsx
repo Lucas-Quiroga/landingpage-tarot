@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 let cursosArray = [
   {
@@ -22,6 +22,16 @@ let cursosArray = [
 ];
 
 const CursosContainer = () => {
+  const [cursos, setCursos] = useState({});
+
+  const getCursos = new Promise((resolve, reject) => {
+    resolve(cursosArray);
+  });
+
+  getCursos.then((respuesta) => {
+    setCursos(respuesta);
+  });
+
   return <div>CursosContainer</div>;
 };
 
