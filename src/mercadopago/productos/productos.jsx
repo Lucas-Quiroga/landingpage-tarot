@@ -11,6 +11,24 @@ const productos = () => {
         description: "lorem",
       },
     ],
+    payer: {
+      name: "Juan",
+      surname: "Lopez",
+      email: "user@email.com",
+      phone: {
+        area_code: "11",
+        number: "4444-4444",
+      },
+      identification: {
+        type: "DNI",
+        number: "12345678",
+      },
+      back_urls: {
+        success: "https://www.success.com",
+        failure: "http://www.failure.com",
+        pending: "http://www.pending.com",
+      },
+    },
   };
 
   mercadopago.preferences
