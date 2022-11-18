@@ -1,8 +1,8 @@
+// SDK de Mercado Pago
 const mercadopago = require("mercadopago");
-require("dotenv").config();
-
+// Agrega credenciales
 mercadopago.configure({
-  access_token: precess.env.ACCESS_TOKEN,
+  access_token: "PROD_ACCESS_TOKEN",
 });
 
 module.exports = {
