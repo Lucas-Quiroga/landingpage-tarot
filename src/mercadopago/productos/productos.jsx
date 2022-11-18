@@ -1,4 +1,5 @@
 import React from "react";
+const { mercadopago } = require("./../utils/mercadoPago");
 
 const productos = () => {
   // Crea un objeto de preferencia
@@ -35,6 +36,9 @@ const productos = () => {
     .create(preference)
     .then(function (response) {
       // En esta instancia deberás asignar el valor dentro de response.body.id por el ID de preferencia solicitado en el siguiente paso
+      res.json({
+        global: response.body.id,
+      });
     })
     .catch(function (error) {
       console.log(error);
