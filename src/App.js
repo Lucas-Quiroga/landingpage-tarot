@@ -6,6 +6,7 @@ import ItemListContainer from "./components/ItemListContainer/ItemListContainer"
 import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailContainer";
 import CursosContainer from "./components/cursosContainer/CursosContainer";
 import Footer from "./components/footer/Footer";
+import Product from "./mercadopago/MercadoPagoReact";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/servicios" element={<ItemListContainer />} />
         <Route path="/servicios/:serviceId" element={<ItemDetailContainer />} />
         <Route path="/cursos" element={<CursosContainer />} />
+        <Route path="/mercadopago" element={<Product />} />
       </Routes>
       <Footer />
     </BrowserRouter>
