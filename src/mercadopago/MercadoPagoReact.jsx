@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import axios from "axios";
 
 const FORM_ID = "payment-form";
 
@@ -8,12 +7,12 @@ export default function Product() {
   const { id } = useParams(); // id de producto
   const [preferenceId, setPreferenceId] = useState(null);
 
-  useEffect(() => {
-    // luego de montarse el componente, le pedimos al backend el preferenceId
-    axios.post("/api/orders", { productId: id }).then((order) => {
-      setPreferenceId(order.preferenceId);
-    });
-  }, [id]);
+  // useEffect(() => {
+  //   // luego de montarse el componente, le pedimos al backend el preferenceId
+  //   axios.post("/api/orders", { productId: id }).then((order) => {
+  //     setPreferenceId(order.preferenceId);
+  //   });
+  // }, [id]);
 
   useEffect(() => {
     if (preferenceId) {
