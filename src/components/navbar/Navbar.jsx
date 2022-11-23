@@ -37,6 +37,11 @@ const Navbar = () => {
             Cursos
           </Link>
         </li>
+        <li>
+          <Link to={"/contacto"} className="a">
+            Contacto
+          </Link>
+        </li>
       </ul>
     </nav>
   );
