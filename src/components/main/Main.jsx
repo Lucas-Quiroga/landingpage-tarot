@@ -2,6 +2,7 @@ import React from "react";
 import "./main.css";
 import cartas from "./../main/cartas.jpg";
 import { Link } from "react-router-dom";
+import Testimonios from "./testimonios/Testimonios";
 
 const Main = () => {
   return (
@@ -39,6 +40,7 @@ const Main = () => {
           </div>
         </div>
       </section>
+      <Testimonios />
     </>
   );
 };
