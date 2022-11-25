@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./navbar.css";
+import icon from "./tarot.jpg";
 
 const Navbar = () => {
   const [active, setActive] = useState(false);
@@ -19,12 +20,7 @@ const Navbar = () => {
       <ul className={active ? "active" : ""}>
         <li>
           <Link to={"/"} className="a">
-            Icon
-          </Link>
-        </li>
-        <li>
-          <Link to={"/"} className="a">
-            Home
+            Inicio
           </Link>
         </li>
         <li>
@@ -45,6 +41,11 @@ const Navbar = () => {
         <li>
           <Link to={"/sobreMi"} className="a">
             Sobre mi
+          </Link>
+        </li>
+        <li>
+          <Link to={"/"} className="a">
+            <img src={icon} alt="icon" className="img__icon" />
           </Link>
         </li>
       </ul>

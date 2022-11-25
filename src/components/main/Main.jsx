@@ -1,6 +1,7 @@
 import React from "react";
 import "./main.css";
 import cartas from "./../main/cartas.jpg";
+import { Link } from "react-router-dom";
 
 const Main = () => {
   return (
@@ -15,9 +16,9 @@ const Main = () => {
               Success is a choice. With this slogan, we look forward to provide
               you every sort of Ball Equipments, that too, the BEST.
             </p>
-            <a href="#" className="btn">
+            <Link to={"/sobreMi"} className="btn">
               Read More
-            </a>
+            </Link>
           </div>
           <img id="header-img" src={cartas} alt="cartas" />
         </div>

@@ -21,6 +21,10 @@ li {
   padding: 1.7rem;
 }
 
+.img__icon{
+  width: 2.2rem;
+}
+
 .a {
   text-decoration: none;
   font-family: "roboto";
