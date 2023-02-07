@@ -12,13 +12,12 @@ const Main = () => {
           <div>
             <h1 className="container__h1">Hola, soy Paula Dominguez</h1>
             <p>
-              Let the MADNESS begin! Never let good enough BE enough! Hard work
-              beats talent when talent doesn't work hard. Winning is a habit,
-              Success is a choice. With this slogan, we look forward to provide
-              you every sort of Ball Equipments, that too, the BEST.
+              Bienvenidos a la magia que guarda todas las respuestas que habitan
+              tu alma. Encara tu vida como un gran acontecimiento irrepetible y
+              unico.
             </p>
             <Link to={"/sobreMi"} className="btn">
-              Read More
+              Sobre mi
             </Link>
           </div>
           <img id="header-img" src={cartas} alt="cartas" />
@@ -28,14 +27,11 @@ const Main = () => {
       <section id="about" className="sectionb">
         <div className="overlay">
           <div className="sectionb-inner">
-            <h3>Swish all em Threes</h3>
-            <h2>Just Get Down Hooping On the Court</h2>
+            <h3>Asomate</h3>
+            <h2>El lenguaje del corazon está más allá de las palabras.</h2>
             <p>
-              From A Basketball to Shooting Sleeves, everything you need - As a
-              beginner, amateur or a pro - The one stop Ball solution for every
-              baller.
-              <br />
-              Visit your nearest SamiHoops store today!
+              Aunque no lo entendamos hay una bendicion oculta en cada
+              dificultad.
             </p>
           </div>
         </div>
