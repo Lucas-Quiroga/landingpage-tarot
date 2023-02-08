@@ -1,0 +1,19 @@
+.carouselapp {
+    text-align: center;
+    margin-top: 30px;
+    margin: 40em;
+}
+
+.flex_row{
+    justify-content: center;
+    display: flex;
+    padding: 20px;
+}
+
+.thumbnail {
+    padding-left: 20px;
+}
+
+.clicked{
+    border: 5px solid black;
+}

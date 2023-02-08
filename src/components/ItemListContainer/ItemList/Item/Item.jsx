@@ -1,8 +1,18 @@
 import React from "react";
 import "./Item.css";
 import { Link } from "react-router-dom";
+// import "slick-carousel/slick/slick.css";
+// import "slick-carousel/slick/slick-theme.css";
+// import Slider from "react-slick";
 
 const Item = ({ item }) => {
+  let settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
   return (
     <div className="card">
       <h3 className="card-title">{item.name}</h3>

@@ -10,19 +10,25 @@ const Footer = () => {
           <span>
             <i className="fa fa-map-marker"></i>
           </span>
-          <span>Street, full address, state/province, country, pincode</span>
+          <span>Ubicación:</span>
+          <p>
+            Juan Manuel de Rosas 3532 entre Arieta y Almafuerte | piso 2 -
+            oficina 18. San Justo, La Matanza.
+          </p>
         </section>
         <section>
           <span>
             <i className="fa fa-phone"></i>
           </span>
-          <span>(00) 0000 0000</span>
+          <span>Télefono:</span>
+          <p>(+54) 9 11 2787-7943</p>
         </section>
         <section>
           <span>
             <i className="fa fa-envelope"></i>
           </span>
-          <span>info@websitename.com</span>
+          <span>Correo electronico:</span>
+          <p>paula.dominguez1946@gmail.com</p>
         </section>
       </div>
       <span className="border-shape"></span>
@@ -42,16 +48,15 @@ const Footer = () => {
           </a>
         </section>
         <section>
-          <Link to={"/"}>Home</Link>
-          <Link to={"/"}>About us</Link>
-          <Link to={"/"}>Order</Link>
-          <Link to={"/"}>Retail</Link>
-          <Link to={"/"}>Member</Link>
-          <Link to={"/"}>Contact Us</Link>
+          <Link to={"/"}>Inicio</Link>
+          <Link to={"/servicios"}>Servicios</Link>
+          <Link to={"/cursos"}>Cursos</Link>
+          <Link to={"/contacto"}>Contacto</Link>
+          <Link to={"/sobreMi"}>Sobre mi</Link>
         </section>
       </div>
       <div className="copyright">
-        Copyright © 2021 websitename - All rights reserved
+        Copyright © 2021 Quiroga, Lucas - All rights reserved
       </div>
     </footer>
   );
