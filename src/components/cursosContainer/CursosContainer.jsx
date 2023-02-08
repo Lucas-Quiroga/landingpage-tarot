@@ -36,7 +36,17 @@ const CursosContainer = () => {
     setCursos(respuesta);
   });
 
-  return <CursosMap cursos={cursos} />;
+  return (
+    <div>
+      <h1>
+        <span>
+          Para quienes se embarquen en aprender el camino del tarot como
+          solidario ancestral, pasen por ahi. les dejo la guia de enseñanzas.
+        </span>
+      </h1>
+      <CursosMap cursos={cursos} />;
+    </div>
+  );
 };
 
 export default CursosContainer;
