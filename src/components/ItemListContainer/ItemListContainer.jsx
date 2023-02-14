@@ -16,7 +16,7 @@ const ItemListContainer = () => {
 
   return (
     <div>
-      {/* <ItemList services={services} /> */}
+      <ItemList services={services} />
       <CarouselServices />
     </div>
   );

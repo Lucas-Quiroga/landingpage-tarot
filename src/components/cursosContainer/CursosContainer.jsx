@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import CursosMap from "./cursosMap/CursosMap";
+import "./CursosContainer.css";
 
 let cursosArray = [
   {
@@ -44,7 +45,9 @@ const CursosContainer = () => {
           solidario ancestral, pasen por ahi. les dejo la guia de enseñanzas.
         </span>
       </h1>
-      <CursosMap cursos={cursos} />;
+      <div className="cursosMapContainer">
+        <CursosMap cursos={cursos} />
+      </div>
     </div>
   );
 };

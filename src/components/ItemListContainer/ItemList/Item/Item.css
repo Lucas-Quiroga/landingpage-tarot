@@ -1,5 +1,4 @@
-.card {
-  /* Add shadows to create the "card" effect */
+/* .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
 }
@@ -23,4 +22,19 @@
 .Information{
     word-wrap: break-word;
     font-size: 0.1rem;
+} */
+
+.card {
+  cursor: pointer;
+  width: 190px;
+  height: 254px;
+  background: rgb(255, 255, 255);
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 255, 0.2);
+  transition: all 0.2s;
+  box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, 0.2);
+}
+
+.card:hover {
+  box-shadow: -12px 12px 2px -1px rgba(0, 0, 255, 0.2);
 }
