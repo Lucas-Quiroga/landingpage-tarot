@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import CursosMap from "./cursosMap/CursosMap";
 import "./CursosContainer.css";
 
-let cursosArray = [
+const cursosArray = [
   {
     id: 1,
     curso: "Arcanos mayores",
