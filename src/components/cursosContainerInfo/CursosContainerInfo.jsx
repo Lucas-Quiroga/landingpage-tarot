@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import "./CursosContainerInfo.css";
+import FormUser from "./../formUserMercadopago/FormUser";
 
 const cursosArray = [
   {
@@ -35,6 +36,7 @@ const cursosArray = [
 const CursosContainerInfo = () => {
   const [cursos, setCursos] = useState({});
   const [show, setShow] = useState(false);
+  const [cambiodeComponente, setCambiodeComponente] = useState(false);
 
   const { cursosId } = useParams();
 
@@ -56,6 +58,10 @@ const CursosContainerInfo = () => {
     }, 2000);
   }, [cursosId]);
 
+  const handleButton = () => {
+    setCambiodeComponente(!cambiodeComponente);
+  };
+
   return (
     <div>
       {show ? (
@@ -72,7 +78,10 @@ const CursosContainerInfo = () => {
               <span>Duración: {cursos.duración}</span>
             </p>
           </div>
-          <button class="card-button__curso">More info</button>
+
+          <button class="card-button__curso" onClick={handleButton}>
+            Comprar
+          </button>
         </div>
       )}
     </div>
