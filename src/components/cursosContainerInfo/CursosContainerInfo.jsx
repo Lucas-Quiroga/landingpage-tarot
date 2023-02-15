@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import "./CursosContainerInfo.css";
 import FormUser from "./../formUserMercadopago/FormUser";
+import { Link } from "react-router-dom";
 
 const cursosArray = [
   {
@@ -78,10 +79,11 @@ const CursosContainerInfo = () => {
               <span>Duración: {cursos.duración}</span>
             </p>
           </div>
-
-          <button class="card-button__curso" onClick={handleButton}>
-            Comprar
-          </button>
+          <Link to="/check-out">
+            <button class="card-button__curso" onClick={handleButton}>
+              Comprar
+            </button>
+          </Link>
         </div>
       )}
     </div>

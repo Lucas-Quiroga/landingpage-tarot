@@ -36,7 +36,7 @@ const CursosCards = ({ cursos }) => {
         </ul>
       </div>
       <div className="button-get-plan">
-        <Link to={"./compra"}>
+        <Link to="/check-out">
           <span>COMPRAR CURSO</span>
         </Link>
       </div>

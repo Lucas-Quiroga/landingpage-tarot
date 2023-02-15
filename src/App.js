@@ -11,6 +11,7 @@ import Product from "./mercadopago/MercadoPagoReact";
 import Contacto from "./components/contacto/Contacto";
 import SobreMi from "./components/paula/SobreMi";
 import CursosContainerInfo from "./components/cursosContainerInfo/CursosContainerInfo";
+import CheckOut from "./components/check-out/CheckOut";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path="/servicios/:serviceId" element={<ItemDetailContainer />} />
         <Route path="/cursos" element={<CursosContainer />} />
         <Route path="/cursos/:cursosId" element={<CursosContainerInfo />} />
+        <Route path="/check-out" element={<CheckOut />} />
         <Route path="/contacto" element={<Contacto />} />
         <Route path="/SobreMi" element={<SobreMi />} />
         {/* <Route path="/mercadopago" element={<Product />} /> */}
