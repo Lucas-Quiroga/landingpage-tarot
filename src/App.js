@@ -1,4 +1,5 @@
 import "./App.css";
+import MPButton from "./mercadopago/client-side/MPButton";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./components/header/Header";
 import Main from "./components/main/Main";
@@ -15,6 +16,7 @@ function App() {
   return (
     <BrowserRouter>
       <Header />
+      <MPButton />
       <Routes>
         <Route path="/" element={<Main />} />
         <Route path="/servicios" element={<ItemListContainer />} />
