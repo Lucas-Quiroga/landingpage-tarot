@@ -1,17 +1,27 @@
 import React, { useState, useContext } from "react";
 
 const Context = React.createContext({});
-const { Provider } = Context;
-export const CartContext = () => useContext(Context);
+export const UserContextGlobal = () => useContext(Context);
 
 const UserContext = ({ children }) => {
   const [user, setUser] = useState({});
+  console.log(user);
 
-  const datosUser = (e) => {
-    setUser(e.target.value);
+  const nuevoUsuario = (e) => {
+    const nombre = e.target.name;
+    const valor = e.target.value;
+
+    setUser((datosUsu) => ({ ...datosUsu, [nombre]: valor }));
+    console.log("comprador " + JSON.stringify(user));
   };
 
-  return <Provider value={{ datosUser, user }}>{children}</Provider>;
+  console.log(user);
+
+  return (
+    <UserContextGlobal.Provider value={{ nuevoUsuario, user }}>
+      {children}
+    </UserContextGlobal.Provider>
+  );
 };
 
 export default UserContext;
