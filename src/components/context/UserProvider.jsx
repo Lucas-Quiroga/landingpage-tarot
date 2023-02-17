@@ -6,7 +6,9 @@ const { Provider } = UsuarioContexto;
 
 const UserProvider = ({ children }) => {
   const [user, setUser] = useState({
-    nombre: "lucas",
+    nombre: "",
+    email: "",
+    telefono: "",
   });
 
   function agregarUsu(params) {
@@ -18,6 +20,7 @@ const UserProvider = ({ children }) => {
     const valor = e.target.value;
 
     setUser((datosUsu) => ({ ...datosUsu, [nombre]: valor }));
+    console.log(user);
   };
 
   return (

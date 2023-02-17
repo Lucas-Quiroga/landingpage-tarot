@@ -1,15 +1,8 @@
 import React, { useContext } from "react";
 import "./Item.css";
 import { Link } from "react-router-dom";
-import { UsuarioContexto } from "../../../context/UserProvider";
-// import "slick-carousel/slick/slick.css";
-// import "slick-carousel/slick/slick-theme.css";
-// import Slider from "react-slick";
 
 const Item = ({ item }) => {
-  const { user, agregarUsu } = useContext(UsuarioContexto);
-  // console.log("me traje " + user["nombre"]);
-
   let settings = {
     dots: true,
     infinite: true,
@@ -17,10 +10,6 @@ const Item = ({ item }) => {
     slidesToShow: 1,
     slidesToScroll: 1,
   };
-
-  function cambiarName(params) {
-    agregarUsu();
-  }
 
   return (
     <div className="card">
@@ -32,8 +21,6 @@ const Item = ({ item }) => {
       <Link to={`/servicios/${item.id}`}>
         <button>Ver detalles</button>
       </Link>
-      <br />
-      <button onClick={agregarUsu}>touch me</button>
     </div>
   );
 };

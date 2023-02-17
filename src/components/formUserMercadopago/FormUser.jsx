@@ -6,7 +6,7 @@ const FormUser = () => {
   // const [datosDelUsuario, setDatosDelUsuario] = useState({});
   // const [usuario, setUsuario] = useState({});
 
-  const user = useContext(usuarioContexto);
+  const { user, nuevoUsuario } = useContext(UsuarioContexto);
 
   // const datos = {
   //   comprador: {
@@ -21,24 +21,23 @@ const FormUser = () => {
   }
 
   return (
-    <UsuarioContexto.Consumer>
-      <div className="card-form-container">
-        <form onSubmit={enviarDatosFormulario}>
+    <div className="card-form-container">
+      <form onSubmit={enviarDatosFormulario}>
+        <div className="card__form">
+          <span className="card__title__form">Subscribe</span>
+          <p className="card__content__form">
+            Get fresh web design resources delivered straight to your inbox
+            every asweek.
+          </p>
           <div className="card__form">
-            <span className="card__title__form">Subscribe</span>
-            <p className="card__content__form">
-              Get fresh web design resources delivered straight to your inbox
-              every {user} asweek.
-            </p>
-            <div className="card__form">
-              <input
-                placeholder="Escriba su nombre"
-                type="text"
-                name="nombre"
-                // onChange={nuevoUsuario}
-              />
-            </div>
-            {/* <div className="card__form">
+            <input
+              placeholder="Escriba su nombre"
+              type="text"
+              name="nombre"
+              onChange={nuevoUsuario}
+            />
+          </div>
+          <div className="card__form">
             <input
               placeholder="Escriba su email"
               type="email"
@@ -61,16 +60,18 @@ const FormUser = () => {
               name="telefono"
               onChange={nuevoUsuario}
             />
-          </div> */}
-            <button className="sign-up" type="submit">
-              Finalizar en MercadoPago
-            </button>
           </div>
-        </form>
-        {/* <button onClick={saludo}>saludame</button>
+          <button className="sign-up" type="submit">
+            Finalizar en MercadoPago
+          </button>
+        </div>
+      </form>
+      <h2>el valor es: {user["nombre"]}</h2>
+      <h2>el valor es: {user["email"]}</h2>
+      <h2>el valor es: {user["telefono"]}</h2>
+      {/* <button onClick={saludo}>saludame</button>
       <h1>{user}</h1> */}
-      </div>
-    </UsuarioContexto.Consumer>
+    </div>
   );
 };
 
