@@ -1,11 +1,17 @@
-import React, { useState, useContext } from "react";
+import React, { useState, createContext } from "react";
+import FormUser from "../formUserMercadopago/FormUser";
 
-const Contexto = React.createContext({});
-const { Provider } = Contexto;
-export const UsuarioContexto = () => useContext(Contexto);
+export const UsuarioContexto = createContext();
+const { Provider } = UsuarioContexto;
 
 const UserProvider = ({ children }) => {
-  const [user, setUser] = useState("lucas");
+  const [user, setUser] = useState({
+    nombre: "lucas",
+  });
+
+  function agregarUsu(params) {
+    console.log("esta funcion agrega al usuario");
+  }
 
   const nuevoUsuario = (e) => {
     const nombre = e.target.name;
@@ -14,7 +20,9 @@ const UserProvider = ({ children }) => {
     setUser((datosUsu) => ({ ...datosUsu, [nombre]: valor }));
   };
 
-  return <Provider value={user}>{children}</Provider>;
+  return (
+    <Provider value={{ user, nuevoUsuario, agregarUsu }}>{children}</Provider>
+  );
 };
 
 export default UserProvider;

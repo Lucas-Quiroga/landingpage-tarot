@@ -12,25 +12,33 @@ import Contacto from "./components/contacto/Contacto";
 import SobreMi from "./components/paula/SobreMi";
 import CursosContainerInfo from "./components/cursosContainerInfo/CursosContainerInfo";
 import CheckOut from "./components/check-out/CheckOut";
+import UserProvider from "./components/context/UserProvider";
 
 function App() {
   return (
-    <BrowserRouter>
-      <Header />
-      <MPButton />
-      <Routes>
-        <Route path="/" element={<Main />} />
-        <Route path="/servicios" element={<ItemListContainer />} />
-        <Route path="/servicios/:serviceId" element={<ItemDetailContainer />} />
-        <Route path="/cursos" element={<CursosContainer />} />
-        <Route path="/cursos/:cursosId" element={<CursosContainerInfo />} />
-        <Route path="/check-out" element={<CheckOut />} />
-        <Route path="/contacto" element={<Contacto />} />
-        <Route path="/SobreMi" element={<SobreMi />} />
-        {/* <Route path="/mercadopago" element={<Product />} /> */}
-      </Routes>
-      <Footer />
-    </BrowserRouter>
+    <>
+      <BrowserRouter>
+        <UserProvider>
+          <Header />
+          <MPButton />
+          <Routes>
+            <Route path="/" element={<Main />} />
+            <Route path="/servicios" element={<ItemListContainer />} />
+            <Route
+              path="/servicios/:serviceId"
+              element={<ItemDetailContainer />}
+            />
+            <Route path="/cursos" element={<CursosContainer />} />
+            <Route path="/cursos/:cursosId" element={<CursosContainerInfo />} />
+            <Route path="/check-out" element={<CheckOut />} />
+            <Route path="/contacto" element={<Contacto />} />
+            <Route path="/SobreMi" element={<SobreMi />} />
+            {/* <Route path="/mercadopago" element={<Product />} /> */}
+          </Routes>
+          <Footer />
+        </UserProvider>
+      </BrowserRouter>
+    </>
   );
 }
 
