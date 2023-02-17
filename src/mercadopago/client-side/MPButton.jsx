@@ -1,4 +1,5 @@
 import { useEffect, useContext } from "react";
+import { UsuarioContexto } from "./../../components/context/UserProvider";
 // import { TurnoContext, UserContext } from "@context/context";
 
 // In this example i'm using React
@@ -10,7 +11,7 @@ import { useEffect, useContext } from "react";
 
 export default function MPButton() {
   // const { turno } = useContext(TurnoContext);
-  // const { user } = useContext(UserContext);
+  const { user } = useContext(UsuarioContexto);
 
   useEffect(() => {
     // The async function is needed since we can't do async stuff in the top level of our useEffect
@@ -21,7 +22,7 @@ export default function MPButton() {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          // user,
+          user,
           // turno,
         }),
       });

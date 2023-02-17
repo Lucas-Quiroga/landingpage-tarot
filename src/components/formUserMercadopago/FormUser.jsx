@@ -66,11 +66,6 @@ const FormUser = () => {
           </button>
         </div>
       </form>
-      <h2>el valor es: {user["nombre"]}</h2>
-      <h2>el valor es: {user["email"]}</h2>
-      <h2>el valor es: {user["telefono"]}</h2>
-      {/* <button onClick={saludo}>saludame</button>
-      <h1>{user}</h1> */}
     </div>
   );
 };

@@ -11,21 +11,14 @@ const UserProvider = ({ children }) => {
     telefono: "",
   });
 
-  function agregarUsu(params) {
-    console.log("esta funcion agrega al usuario");
-  }
-
   const nuevoUsuario = (e) => {
     const nombre = e.target.name;
     const valor = e.target.value;
 
     setUser((datosUsu) => ({ ...datosUsu, [nombre]: valor }));
-    console.log(user);
   };
 
-  return (
-    <Provider value={{ user, nuevoUsuario, agregarUsu }}>{children}</Provider>
-  );
+  return <Provider value={{ user, nuevoUsuario }}>{children}</Provider>;
 };
 
 export default UserProvider;

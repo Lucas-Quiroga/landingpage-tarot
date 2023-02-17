@@ -20,7 +20,6 @@ function App() {
       <BrowserRouter>
         <UserProvider>
           <Header />
-          <MPButton />
           <Routes>
             <Route path="/" element={<Main />} />
             <Route path="/servicios" element={<ItemListContainer />} />
