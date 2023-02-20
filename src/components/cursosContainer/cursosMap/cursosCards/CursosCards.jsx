@@ -45,6 +45,9 @@ const CursosCards = ({ cursos }) => {
           <span>SOBRE EL CURSO</span>
         </Link>
       </div>
+      <div className="button-get-plan">
+        <button>comprar</button>
+      </div>
     </div>
   );
 };

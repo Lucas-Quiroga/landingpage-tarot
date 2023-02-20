@@ -21,12 +21,13 @@ export default function MPButton() {
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({
-          user,
+        body: JSON.stringify(
+          user
           // turno,
-        }),
+        ),
       });
       const data = await res.json();
+      console.log(data);
 
       // data.global is the ID that MP returns from the API, it comes from our backend route
       if (data.global) {
