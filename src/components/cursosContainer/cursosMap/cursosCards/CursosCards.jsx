@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./cursosCard.css";
+import axios from "axios";
 
 const CursosCards = ({ cursos }) => {
   return (
@@ -46,7 +47,18 @@ const CursosCards = ({ cursos }) => {
         </Link>
       </div>
       <div className="button-get-plan">
-        <button>comprar</button>
+        <button
+          onClick={() => {
+            axios
+              .post("http://localhost:3001/payment", cursos)
+              .then(
+                (res) =>
+                  (window.location.href = res.data.response.body.init_point)
+              );
+          }}
+        >
+          comprar
+        </button>
       </div>
     </div>
   );

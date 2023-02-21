@@ -1,5 +1,4 @@
 import "./App.css";
-import MPButton from "./mercadopago/client-side/MPButton";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./components/header/Header";
 import Main from "./components/main/Main";
@@ -7,7 +6,6 @@ import ItemListContainer from "./components/ItemListContainer/ItemListContainer"
 import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailContainer";
 import CursosContainer from "./components/cursosContainer/CursosContainer";
 import Footer from "./components/footer/Footer";
-import Product from "./mercadopago/MercadoPagoReact";
 import Contacto from "./components/contacto/Contacto";
 import SobreMi from "./components/paula/SobreMi";
 import CursosContainerInfo from "./components/cursosContainerInfo/CursosContainerInfo";
@@ -32,7 +30,6 @@ function App() {
             <Route path="/check-out" element={<CheckOut />} />
             <Route path="/contacto" element={<Contacto />} />
             <Route path="/SobreMi" element={<SobreMi />} />
-            {/* <Route path="/mercadopago" element={<Product />} /> */}
           </Routes>
           <Footer />
         </UserProvider>

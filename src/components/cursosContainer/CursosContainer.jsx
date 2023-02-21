@@ -10,8 +10,7 @@ const cursosArray = [
     duración: "256min",
     precio: 16000,
     img: "../../../public/img/tarott.jpg",
-    descripcion:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, voluptate repellat facilis, repudiandae optio earum perferendis quisquam laboriosam ab cupiditate asperiores nemo corrupti. Aliquid fugit voluptas quaerat quod, nam, vitae quisquam cum explicabo a beatae, quis quidem molestias rem doloremque facilis facere accusamus similique totam dolorem sit reiciendis dolores saepe?",
+    descripcion: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
   },
   {
     id: 2,
@@ -20,8 +19,7 @@ const cursosArray = [
     duración: "256min",
     precio: 16000,
     img: "../../../public/img/le.jpg",
-    descripcion:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, voluptate repellat facilis, repudiandae optio earum perferendis quisquam laboriosam ab cupiditate asperiores nemo corrupti. Aliquid fugit voluptas quaerat quod, nam, vitae quisquam cum explicabo a beatae, quis quidem molestias rem doloremque facilis facere accusamus similique totam dolorem sit reiciendis dolores saepe?",
+    descripcion: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
   },
   {
     id: 3,
@@ -30,8 +28,7 @@ const cursosArray = [
     duración: "226min",
     precio: 13000,
     img: "../../../public/img/reiki.jpg",
-    descripcion:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, voluptate repellat facilis, repudiandae optio earum perferendis quisquam laboriosam ab cupiditate asperiores nemo corrupti. Aliquid fugit voluptas quaerat quod, nam, vitae quisquam cum explicabo a beatae, quis quidem molestias rem doloremque facilis facere accusamus similique totam dolorem sit reiciendis dolores saepe?",
+    descripcion: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
   },
 ];
 

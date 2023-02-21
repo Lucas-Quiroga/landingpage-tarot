@@ -13,20 +13,26 @@ server.use(express.json());
 server.use(morgan("dev"));
 
 server.use((_req, res, next) => {
-  res.header("Access-Control-Allow-Origin", "http://localhost:3001");
-  res.header("Access-Control-Allow-Credentials", true);
-  res.header(
+  res.setHeader("Access-Control-Allow-Origin", "*");
+  res.setHeader("Access-Control-Allow-Credentials", "true");
+  res.setHeader("Access-Control-Max-Age", "1800");
+  res.setHeader(
     "Access-Control-Allow-Headers",
-    "Origin, X-Requested-With, Content-Type, Accept, Authorization"
+    "X-Requested-With, content-type"
   );
-  res.header("Access-Control-Allow-Methods", "GET,HEAD,OPTIONS,POST,PUT");
+  res.setHeader(
+    "Access-Control-Allow-Methods",
+    "PUT, POST, GET, DELETE, PATCH, OPTIONS"
+  );
+
   next();
 });
 
 /**Configuramos el mercadopago */
 
 mercadopago.configure({
-  access_token: process.env.MP_ACCESS_TOKEN,
+  access_token:
+    "TEST-2140410972376935-021421-1bee81f352b2a183b9faa175ae15555e-389487464",
 });
 
 /**
