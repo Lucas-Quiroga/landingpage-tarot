@@ -57,8 +57,8 @@ server.post("/payment", (req, res) => {
     ],
     back_urls: {
       success: "http://localhost:3000",
-      failure: "",
-      pending: "",
+      failure: "https://failure.com",
+      pending: "https://pending.com",
     },
     auto_return: "approved",
     binary_mode: true,

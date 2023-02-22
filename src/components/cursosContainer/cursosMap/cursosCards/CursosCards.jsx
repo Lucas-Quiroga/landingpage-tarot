@@ -38,18 +38,7 @@ const CursosCards = ({ cursos }) => {
       </div>
       <div className="button-get-plan">
         <Link to="/check-out">
-          <span
-            onClick={() => {
-              axios
-                .post("http://localhost:3001/payment", cursos)
-                .then(
-                  (res) =>
-                    (window.location.href = res.data.response.body.init_point)
-                );
-            }}
-          >
-            COMPRAR CURSO
-          </span>
+          <span>COMPRAR CURSO</span>
         </Link>
       </div>
       <div className="button-get-plan">
@@ -57,9 +46,20 @@ const CursosCards = ({ cursos }) => {
           <span>SOBRE EL CURSO</span>
         </Link>
       </div>
-      {/* <div className="button-get-plan">
-        <button>comprar</button>
-      </div> */}
+      <div className="button-get-plan">
+        <button
+          onClick={() => {
+            axios
+              .post("http://localhost:3001/payment", cursos)
+              .then(
+                (res) =>
+                  (window.location.href = res.data.response.body.init_point)
+              );
+          }}
+        >
+          comprar
+        </button>
+      </div>
     </div>
   );
 };
