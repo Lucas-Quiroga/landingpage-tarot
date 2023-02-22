@@ -15,7 +15,34 @@ ul {
   text-align: center;
 }
 
-li {
+.buttonStyle {
+  position: relative;
+  display: inline-block;
+  margin: 15px;
+  padding: 15px 30px;
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: #725ac1;
+  background: transparent;
+  cursor: pointer;
+  transition: ease-out 0.5s;
+  border: 2px solid #725ac1;
+  border-radius: 10px;
+  box-shadow: inset 0 0 0 0 #725ac1;
+}
+
+.buttonStyle:hover {
+  color: white;
+  box-shadow: inset 0 -100px 0 0 #725ac1;
+}
+
+.buttonStyle:active {
+  transform: scale(0.9);
+}
+
+/* li {
   list-style: none;
   display: inline-block;
   padding: 1.7rem;
@@ -37,6 +64,7 @@ ul li:hover {
   background: rebeccapurple;
   transition: all 0.5s ease-in-out;
 }
+*/
 
 .toggle {
   width: 100%;

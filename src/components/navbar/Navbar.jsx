@@ -18,36 +18,36 @@ const Navbar = () => {
         </i>
       </div>
       <ul className={active ? "active" : ""}>
-        <li>
+        <li className="buttonStyle">
           <Link to={"/"} className="a">
             Inicio
           </Link>
         </li>
-        <li>
+        <li className="buttonStyle">
           <Link to={"/servicios"} className="a">
             Servicios
           </Link>
         </li>
-        <li>
+        <li className="buttonStyle">
           <Link to={"/cursos"} className="a">
             Cursos
           </Link>
         </li>
-        <li>
+        <li className="buttonStyle">
           <Link to={"/contacto"} className="a">
             Contacto
           </Link>
         </li>
-        <li>
+        <li className="buttonStyle">
           <Link to={"/sobreMi"} className="a">
             Sobre mi
           </Link>
         </li>
-        <li>
+        {/* <li>
           <Link to={"/"} className="a">
             <img src={icon} alt="icon" className="img__icon" />
           </Link>
-        </li>
+        </li> */}
       </ul>
     </nav>
   );

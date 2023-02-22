@@ -36,7 +36,7 @@ const Main = () => {
           </div>
         </div>
       </section>
-      <Testimonios />
+      {/* <Testimonios /> */}
     </>
   );
 };
