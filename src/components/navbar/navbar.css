@@ -1,98 +1,102 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 nav {
-  width: 100%;
-  /* background-color: #b17cc4; */
-  min-height: 3em;
-}
-
-ul {
-  width: 100%;
-  text-align: center;
-}
-
-.buttonStyle {
-  position: relative;
-  display: inline-block;
-  margin: 15px;
-  padding: 15px 30px;
-  text-align: center;
-  font-size: 18px;
-  letter-spacing: 1px;
-  text-decoration: none;
-  color: #725ac1;
-  background: transparent;
-  cursor: pointer;
-  transition: ease-out 0.5s;
-  border: 2px solid #725ac1;
-  border-radius: 10px;
-  box-shadow: inset 0 0 0 0 #725ac1;
-}
-
-.buttonStyle:hover {
-  color: white;
-  box-shadow: inset 0 -100px 0 0 #725ac1;
-}
-
-.buttonStyle:active {
-  transform: scale(0.9);
-}
-
-/* li {
-  list-style: none;
-  display: inline-block;
-  padding: 1.7rem;
-}
-
-.img__icon{
-  width: 2.2rem;
-}
-
-.a {
-  text-decoration: none;
-  font-family: "roboto";
-  font-size: 1.1rem;
-  color: azure;
-  text-transform: uppercase;
-}
-
-ul li:hover {
-  background: rebeccapurple;
-  transition: all 0.5s ease-in-out;
-}
-*/
-
-.toggle {
-  width: 100%;
-  font-size: 2rem;
-  text-align: right;
+  /* background-color: #333; */
+  backdrop-filter: blur(10px);
   padding: 20px;
-  color: azure;
-  cursor: pointer;
-  display: none;
-  background: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4rem;
+  z-index: 9999;
 }
 
-@media (max-width: 800px) {
-  .toggle {
-    display: inline-block;
+#toggle-menu{
+  display: none;
+}
+
+.menu {
+  justify-content: center;
+  display: flex;
+  text-align: center;
+  margin: 0 auto;
+  gap: 3rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  margin-left: 20px;
+}
+
+nav .menu-icon {
+  display: none;
+}
+
+nav .menu-icon span {
+  display: block;
+  height: 2px;
+  width: 25px;
+  margin-bottom: 5px;
+  position: relative;
+  background: #fff;
+  border-radius: 2px;
+}
+
+nav #toggle-menu:checked + .menu-icon span:nth-of-type(1) {
+  transform: rotate(45deg) translate(5px, 6px);
+}
+
+nav #toggle-menu:checked + .menu-icon span:nth-of-type(2) {
+  opacity: 0;
+}
+
+nav #toggle-menu:checked + .menu-icon span:nth-of-type(3) {
+  transform: rotate(-45deg) translate(4px, -4px);
+}
+
+/* nav ul.menu li:hover {
+  background-color: #fff;
+}
+
+nav ul.menu li:hover a {
+  color: #333;
+} */
+
+@media (max-width: 768px) {
+  nav ul.menu {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    backdrop-filter: blur(10px);
+    padding: 10px 0;
   }
 
-  ul {
-    width: 100%;
+  .a{
+    color: black;
+  }
+
+  nav .menu-icon {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+  }
+
+  nav .toggle {
     display: none;
   }
 
-  ul li {
-    display: block;
-    text-align: center;
-  }
-
-  .active {
-    display: block;
+  nav #toggle-menu:checked ~ ul.menu {
+    display: flex;
   }
 }

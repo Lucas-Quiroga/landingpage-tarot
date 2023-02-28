@@ -11,13 +11,14 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="navbar-container">
-      <div className="toggle menu">
-        <i className="bx bx-menu" onClick={handleClick}>
-          hola
-        </i>
-      </div>
-      <ul className={active ? "active" : ""}>
+    <nav>
+      <input type="checkbox" id="toggle-menu" />
+      <label for="toggle-menu" class="menu-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <ul className="menu">
         <li className="buttonStyle">
           <Link to={"/"} className="a">
             Inicio

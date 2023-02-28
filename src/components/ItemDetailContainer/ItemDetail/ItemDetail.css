@@ -1,14 +1,22 @@
 .detailObjContainer {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+  background: white;
+  color: black;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  border: 2px solid black;
-  margin: 10px 25em;
-  position: relative;
-  top: 10em;
+  align-items: center;
+  text-align: center;
 }
 
-.detailObjChildren {
-  justify-content: center;
-  text-align: center;
-  padding: 8em 5em;
+.detailObjChildren img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
 }
