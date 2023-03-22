@@ -56,8 +56,8 @@ server.post("/payment", (req, res) => {
       },
     ],
     back_urls: {
-      success: "http://localhost:3000",
-      failure: "https://failure.com",
+      success: "http://localhost:3000/",
+      failure: "http://localhost:3000/",
       pending: "https://pending.com",
     },
     auto_return: "approved",
@@ -72,3 +72,13 @@ server.post("/payment", (req, res) => {
 server.listen(3001, () => {
   console.log("Server is running on port: 3001");
 });
+
+/**
+ * http://localhost:3000/?collection_id=1313488125&collection_status=approved&payment_id=1313488125&status=approved&external_reference=null&payment_type=credit_card&merchant_order_id=8315329879&preference_id=389487464-3dbd1a6d-c19e-45dd-95db-282580c84154&site_id=MLA&processing_mode=aggregator&merchant_account_id=null
+ *
+ */
+
+/**
+ * Tenes que hacer: 1-Crear una vista para cada estado de pago, 2- crear un back y bdd para guardar los datos con nodejs, panel de administracion
+ *
+ */
