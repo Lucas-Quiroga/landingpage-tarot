@@ -36,7 +36,20 @@ const Main = () => {
           </div>
         </div>
       </section>
-      {/* <Testimonios /> */}
+
+      <section id="home" className="sectionc">
+        <div className="container">
+          <div>
+            <h2>Hola, soy Paula Dominguez</h2>
+            <p>
+              Bienvenidos a la magia que guarda todas las respuestas que habitan
+              tu alma. Encara tu vida como un gran acontecimiento irrepetible y
+              unico.
+            </p>
+          </div>
+        </div>
+      </section>
+      <Testimonios />
     </>
   );
 };

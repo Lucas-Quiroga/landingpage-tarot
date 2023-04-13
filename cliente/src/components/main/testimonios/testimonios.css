@@ -1,9 +1,11 @@
 .testimonial__container {
-  width: 750px;
+  width: 100;
 }
 
 .testimonial__card {
   background-color: var(--container-color);
+  /* width: 30rem !important; */
+  /* background-color: red; */
   border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 1.5rem 2rem;
   border-radius: 1.5rem;
@@ -24,6 +26,7 @@
 
 .testimonial__description {
   font-size: var(--small-font-size);
+  color: black;
 }
 
 /* Swiper */

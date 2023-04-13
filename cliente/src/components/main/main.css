@@ -15,7 +15,6 @@ body {
   line-height: 1.6;
   color: white;
   font-size: 1.1rem;
-
 }
 
 h1,
@@ -85,11 +84,13 @@ img {
 }
 
 .sectionb-inner h3 {
+  color: lightgray;
   font-size: 2rem;
   margin-bottom: 1rem;
 }
 
 .sectionb-inner h2 {
+  color: white;
   font-size: 5rem;
   margin-top: 1;
   line-height: 1;
@@ -98,6 +99,22 @@ img {
 .sectionb-inner p {
   font-size: 1.5rem;
   margin-top: 1rem;
+}
+
+.sectionc {
+  margin: 10rem 0;
+}
+.sectionc .container {
+  display: grid;
+  grid-template-columns: 1fr;
+  /* grid-gap: 3rem; */
+  align-items: center;
+  justify-content: center;
+}
+
+.sectionc h2 {
+  font-size: 4rem;
+  color: white;
 }
 
 .sectionc .gallery {
@@ -186,10 +203,10 @@ img {
     font-size: 3.5rem;
   }
 
-  .sectionc .gallery {
+  /* .sectionc .gallery {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-  }
+  } */
 
   .section-footer .container {
     grid-template-columns: 1fr;
