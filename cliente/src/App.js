@@ -31,8 +31,8 @@ function App() {
             <Route path="/contacto" element={<Contacto />} />
             <Route path="/SobreMi" element={<SobreMi />} />
           </Routes>
-          <Footer />
         </UserProvider>
+        <Footer />
       </BrowserRouter>
     </>
   );

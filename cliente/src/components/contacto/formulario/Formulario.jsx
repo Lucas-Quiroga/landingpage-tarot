@@ -18,12 +18,12 @@ const Formulario = () => {
   };
   return (
     <section className="contact section" id="contact">
-      <h2 className="section__title">Get in touch</h2>
-      <span className="section__subtitle">Contact Me</span>
+      <h2 className="section__title">Ponte en contacto</h2>
+      <span className="section__subtitle">Contáctame</span>
 
       <div className="contact__container container grid">
         <div className="contact__content">
-          <h3 className="contact__title">Talk to me</h3>
+          <h3 className="contact__title">Ponte en contacto conmigo</h3>
 
           <div className="contact__info">
             <div className="contact__card">
@@ -38,7 +38,7 @@ const Formulario = () => {
                 href="mailto:exampleemail@gmail.com"
                 className="contact__button"
               >
-                Write me
+                Escribirle
                 <i className="bx bx-right-arrow-alt contact__button-icon"></i>
               </a>
             </div>
@@ -53,7 +53,7 @@ const Formulario = () => {
                 href="https://api.whatsapp.com/send?phone=62214408789&text=Hello, more information!"
                 className="contact__button"
               >
-                Write me{" "}
+                Escribirle
                 <i className="bx bx-right-arrow-alt contact__button-icon"></i>
               </a>
             </div>
@@ -65,7 +65,7 @@ const Formulario = () => {
               <span className="contact__card-data">user.123</span>
 
               <a href="https://m.me/crypticalcoder" className="contact__button">
-                Write me{" "}
+                Escribirle
                 <i className="bx bx-right-arrow-alt contact__button-icon"></i>
               </a>
             </div>
@@ -73,7 +73,7 @@ const Formulario = () => {
         </div>
 
         <div className="contact__content">
-          <h3 className="contact__title">Write me your project</h3>
+          <h3 className="contact__title">Cuentame tu interés</h3>
 
           <form ref={form} onSubmit={sendEmail}>
             <div className="contact__form-div">
@@ -82,7 +82,7 @@ const Formulario = () => {
                 type="text"
                 name="name"
                 className="contact__form-input"
-                placeholder="Insert your name"
+                placeholder="Escriba su nombre"
               />
             </div>
             <div className="contact__form-div">
@@ -91,7 +91,7 @@ const Formulario = () => {
                 type="email"
                 name="email"
                 className="contact__form-input"
-                placeholder="Insert your email"
+                placeholder="Escriba su email"
               />
             </div>
             <div className="contact__form-div contact__form-area">
@@ -101,11 +101,11 @@ const Formulario = () => {
                 cols="30"
                 rows="10"
                 className="contact__form-input"
-                placeholder="Write your project"
+                placeholder="Escribe tu necesidad y pronto me pondré en contacto"
               ></textarea>
             </div>
             <button className="button button--flex">
-              Send Message
+              Enviar mensaje
               <svg
                 class="button__icon"
                 xmlns="http://www.w3.org/2000/svg"

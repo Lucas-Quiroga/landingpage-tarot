@@ -27,7 +27,7 @@
 .card {
   border: 1px solid #ccc;
   border-radius: 5em;
-  padding: 10px;
+  padding: 8px;
   max-width: 400px;
   margin: 0 auto;
   background: #ffffff;
@@ -43,9 +43,9 @@
   /* mix-blend-mode; */
 }
 
-.card-title{
+.card-title {
   font-size: 1.5rem;
-  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   margin: 0 auto;
   justify-content: center;
   text-align: center;
@@ -61,25 +61,23 @@
   margin-bottom: 20px;
 }
 
-.card-btn{
+.card-btn {
   margin: 1rem;
   color: #e8e8e8;
- padding: 0.7em 1.7em;
- font-size: 18px;
- border-radius: 0.5em;
- background:  #090909;
- border: 1px solid #e8e8e8;
- transition: all .3s;
- box-shadow: 6px 6px 12px #c5c5c5,
-             -6px -6px 12px #ffffff;
+  padding: 0.7em 1.7em;
+  font-size: 18px;
+  border-radius: 0.5em;
+  background: #090909;
+  border: 1px solid #e8e8e8;
+  transition: all 0.3s;
+  box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
 }
 
 .card-btn:active {
- color: #666;
- box-shadow: inset 4px 4px 12px #c5c5c5,
-             inset -4px -4px 12px #ffffff;
+  color: #666;
+  box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
 }
 
-.card:hover{
+.card:hover {
   transform: scale(1.1);
 }

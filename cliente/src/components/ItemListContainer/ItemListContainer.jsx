@@ -1,24 +1,52 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import servicesJson from "./servicesJson.json";
 import ItemList from "./ItemList/ItemList";
 import CarouselServices from "../carouselServices/CarouselServices";
+import "./ItemListContainer.css";
 
 const ItemListContainer = () => {
   const [services, setServices] = useState([]);
+  const [cargando, setCargando] = useState(false);
 
-  const promiseServices = new Promise((resolve, reject) => {
-    resolve(servicesJson);
-  });
+  useEffect(() => {
+    setTimeout(() => {
+      const promiseServices = new Promise((resolve, reject) => {
+        resolve(servicesJson);
+      });
+      promiseServices.then(function (value) {
+        setServices(value);
+      });
+    }, 2000);
+  }, [services]);
 
-  promiseServices.then(function (value) {
-    setServices(value);
-  });
+  useEffect(() => {
+    setCargando(true);
+    setTimeout(() => {
+      setCargando(false);
+    }, 2000);
+  }, [services]);
 
   return (
-    <div className="overlay_a">
-      <ItemList services={services} />
-      {/* <CarouselServices /> */}
-    </div>
+    <>
+      {cargando ? (
+        <div className="contenedor_spinner">
+          <h2 style={{ color: "white" }}>...Cargando</h2>
+          <div class="spinner">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+      ) : (
+        <div className="overlay_a">
+          <ItemList services={services} />
+          {/* <CarouselServices /> */}
+        </div>
+      )}
+    </>
   );
 };
 
