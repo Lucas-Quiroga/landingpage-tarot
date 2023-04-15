@@ -15,7 +15,7 @@ const ItemListContainer = () => {
   });
 
   return (
-    <div>
+    <div className="overlay_a">
       <ItemList services={services} />
       {/* <CarouselServices /> */}
     </div>

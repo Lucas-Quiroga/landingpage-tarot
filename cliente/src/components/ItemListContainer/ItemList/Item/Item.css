@@ -26,23 +26,60 @@
 
 .card {
   border: 1px solid #ccc;
-  border-radius: 5px;
-  padding: 20px;
+  border-radius: 5em;
+  padding: 10px;
   max-width: 400px;
   margin: 0 auto;
-  background: white;
+  background: #ffffff;
   color: black;
-  margin-top: 5rem;
+  margin-top: 8rem;
   margin-bottom: 5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+  transition: transform 0.3s ease-in-out;
+  /* mix-blend-mode; */
 }
 
-.card img {
+.card-title{
+  font-size: 1.5rem;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  margin: 0 auto;
+  justify-content: center;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.card-img {
   max-width: 100%;
+  margin: 0 auto;
+  background-color: red;
+  position: relative;
   height: auto;
   margin-bottom: 20px;
+}
+
+.card-btn{
+  margin: 1rem;
+  color: #e8e8e8;
+ padding: 0.7em 1.7em;
+ font-size: 18px;
+ border-radius: 0.5em;
+ background:  #090909;
+ border: 1px solid #e8e8e8;
+ transition: all .3s;
+ box-shadow: 6px 6px 12px #c5c5c5,
+             -6px -6px 12px #ffffff;
+}
+
+.card-btn:active {
+ color: #666;
+ box-shadow: inset 4px 4px 12px #c5c5c5,
+             inset -4px -4px 12px #ffffff;
+}
+
+.card:hover{
+  transform: scale(1.1);
 }

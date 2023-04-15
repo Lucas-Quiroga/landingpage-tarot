@@ -29,11 +29,12 @@ const Navbar = () => {
             Servicios
           </Link>
         </li>
-        <li className="buttonStyle">
+        {/* DESHABILITADO HASTA QUE RESUELVA */}
+        {/* <li className="buttonStyle">
           <Link to={"/cursos"} className="a">
             Cursos
           </Link>
-        </li>
+        </li> */}
         <li className="buttonStyle">
           <Link to={"/contacto"} className="a">
             Contacto

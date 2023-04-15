@@ -4,8 +4,8 @@ import iconoweb from "./../../assets/iconomadre.png";
 
 const SobreMi = () => {
   return (
-    <section id="about" className="sectionb">
-      <div className="overlay">
+    <section id="about" className="sectionc">
+      <div className="overlay_a">
         <div className="sectionb-inner">
           <h2>Hola!</h2>
           <p>
