@@ -3,6 +3,7 @@ import servicesJson from "./servicesJson.json";
 import ItemList from "./ItemList/ItemList";
 import CarouselServices from "../carouselServices/CarouselServices";
 import "./ItemListContainer.css";
+import Footer from "../footer/Footer";
 
 const ItemListContainer = () => {
   const [services, setServices] = useState([]);
@@ -43,7 +44,7 @@ const ItemListContainer = () => {
       ) : (
         <div className="overlay_a">
           <ItemList services={services} />
-          {/* <CarouselServices /> */}
+          <Footer />
         </div>
       )}
     </>

@@ -32,7 +32,7 @@ function App() {
             <Route path="/SobreMi" element={<SobreMi />} />
           </Routes>
         </UserProvider>
-        <Footer />
+        {/* <Footer /> */}
       </BrowserRouter>
     </>
   );

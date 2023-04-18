@@ -3,6 +3,7 @@ import "./main.css";
 import cartas from "./../main/cartas.jpg";
 import { Link } from "react-router-dom";
 import Testimonios from "./testimonios/Testimonios";
+import Footer from "../footer/Footer";
 
 const Main = () => {
   return (
@@ -50,6 +51,7 @@ const Main = () => {
         </div>
       </section>
       <Testimonios />
+      <Footer />
     </>
   );
 };
