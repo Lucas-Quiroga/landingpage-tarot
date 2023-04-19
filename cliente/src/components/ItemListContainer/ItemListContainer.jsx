@@ -3,6 +3,7 @@ import servicesJson from "./servicesJson.json";
 import ItemList from "./ItemList/ItemList";
 import CarouselServices from "../carouselServices/CarouselServices";
 import "./ItemListContainer.css";
+import SpinnerView from "../spinnerView/SpinnerView";
 import Footer from "../footer/Footer";
 
 const ItemListContainer = () => {
@@ -30,17 +31,7 @@ const ItemListContainer = () => {
   return (
     <>
       {cargando ? (
-        <div className="contenedor_spinner">
-          <h2 style={{ color: "white" }}>...Cargando</h2>
-          <div class="spinner">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
-        </div>
+        <SpinnerView />
       ) : (
         <div className="overlay_a">
           <ItemList services={services} />

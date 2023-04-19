@@ -1,7 +1,10 @@
 body {
   background-image: url("./../public//img/background.jpg") !important;
   background-position: 20% 30% !important;
+  background-attachment: fixed;
   background-size: cover !important;
+  height: 100vh;
+  /* width: 100vw; */
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
