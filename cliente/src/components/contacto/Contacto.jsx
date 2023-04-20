@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import SpinnerView from "../spinnerView/SpinnerView";
 import Formulario from "./formulario/Formulario";
+import Footer from "./../footer/Footer";
 
 const Contacto = () => {
   const [cargando, setCargando] = useState(false);
@@ -17,10 +18,15 @@ const Contacto = () => {
       {cargando ? (
         <SpinnerView />
       ) : (
-        <div>
-          Contacto
-          <Formulario />
-        </div>
+        <section>
+          <div className="overlay_formulario">
+            <div>
+              Contacto
+              <Formulario />
+              <Footer />
+            </div>
+          </div>
+        </section>
       )}
     </>
   );

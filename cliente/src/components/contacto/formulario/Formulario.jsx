@@ -18,7 +18,9 @@ const Formulario = () => {
   };
   return (
     <section className="contact section" id="contact">
-      <h2 className="section__title">Ponte en contacto</h2>
+      <h1 className="section__title" style={{ color: "white" }}>
+        Ponte en contacto
+      </h1>
       <span className="section__subtitle">Contáctame</span>
 
       <div className="contact__container container grid">
