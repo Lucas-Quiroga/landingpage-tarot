@@ -1,6 +1,7 @@
 nav {
   /* background-color: #333; */
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(20px);
+  background-color: var(--overlay-color);
   padding: 20px;
   display: flex;
   justify-content: space-between;
@@ -23,6 +24,7 @@ nav {
   text-align: center;
   margin: 0 auto;
   gap: 3rem;
+  
 }
 
 nav a {
@@ -47,6 +49,8 @@ nav .menu-icon span {
 }
 
 nav #toggle-menu:checked + .menu-icon span:nth-of-type(1) {
+
+
   transform: rotate(45deg) translate(5px, 6px);
 }
 
@@ -76,12 +80,13 @@ nav ul.menu li:hover a {
     position: absolute;
     top: 60px;
     left: 0;
-    backdrop-filter: blur(10px);
     padding: 10px 0;
+    background-color: var(--overlay-color);
   }
 
   .a{
-    color: black;
+    color: white;
+    
   }
 
   nav .menu-icon {
