@@ -11,7 +11,7 @@ const ItemDetail = ({ json }) => {
       <h4>Price: {json.price}</h4>
       <h4>Description: {json.information}</h4>
       <a href="https://wa.me/message/32XC2THZUMWCE1" target="_blank">
-        <button>Solicitar servicio</button>
+        <button className="btn">Solicitar servicio</button>
       </a>
     </div>
   );
