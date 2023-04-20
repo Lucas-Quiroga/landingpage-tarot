@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import servicesJson from "./servicesJson.json";
 import ItemList from "./ItemList/ItemList";
-import CarouselServices from "../carouselServices/CarouselServices";
 import "./ItemListContainer.css";
 import SpinnerView from "../spinnerView/SpinnerView";
 import Footer from "../footer/Footer";
