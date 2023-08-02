@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import servicesJson from "./servicesJson.json";
+import servicesJson from "../../json/servicesJson.json";
 import ItemList from "./ItemList/ItemList";
 import "./ItemListContainer.css";
 import SpinnerView from "../spinnerView/SpinnerView";

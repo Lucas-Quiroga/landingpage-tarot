@@ -1,0 +1,40 @@
+[
+    {
+      "id": 1,
+      "name": "Lectura de tarot",
+      "price": 2500,
+      "information":
+        "Método de consulta e interpretación de hechos del pasado, presente y futuro.",
+        "detail": "La lectura de tarot es una práctica adivinatoria que se basa en el uso de cartas de tarot para obtener información y percepciones sobre situaciones pasadas, presentes o futuras de una persona. Las cartas de tarot son un mazo de 78 cartas que se dividen en dos grupos: Arcanos Mayores y Arcanos Menores. Cada carta tiene un significado simbólico y puede interpretarse de diversas maneras según el contexto y la posición en la tirada.Los tarotistas, a través de su intuición y conocimiento de los símbolos en las cartas, interpretan la tirada para proporcionar orientación, consejos o respuestas a las preguntas y preocupaciones de la persona que solicita la lectura. El tarot se utiliza con fines de autoconocimiento, toma de decisiones, exploración espiritual y búsqueda de consejo en diversas áreas de la vida, como el amor, la carrera, la salud y más.La lectura de tarot es una práctica espiritual y personal, y es esencial acercarse a ella con una mente abierta y respeto hacia las creencias y experiencias de los demás.",
+      "modality": "Presencial o Virtual",
+      "img": "./../img/tarott.jpg"
+    },
+    {"id": 2,
+      "name": "Limpieza energética",
+      "price": 1700,
+      "information":
+        "Se utiliza un péndulo para detectar alteraciones vibracionales en el cuerpo energético, para luego corregirlas eliminando bloqueos y reparando circuitos. Como resultado, la energía vuelve a fluir de manera libre y equilibrada.",
+        "detail": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus voluptatum minus, veritatis illo obcaecati necessitatibus aspernatur? Expedita doloribus dicta voluptatum atque laboriosam obcaecati, ex quasi, a dolores laborum, deleniti id ab eveniet quam autem exercitationem? Beatae quos vitae sed voluptate aperiam, voluptates, fugit neque quae architecto laudantium excepturi nobis! Mollitia temporibus, ipsam laboriosam, unde nihil est quia ut laborum voluptate itaque doloremque tempore explicabo sequi blanditiis facilis. Consequatur libero, suscipit porro, neque voluptatum repellendus velit ipsa modi dolore quaerat recusandae, magni veniam temporibus quia? Asperiores, minus? Aspernatur perferendis ab, dolorum quidem nesciunt, eum eos officiis beatae quos optio mollitia dolores?Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus voluptatum minus, veritatis illo obcaecati necessitatibus aspernatur? Expedita doloribus dicta voluptatum atque laboriosam obcaecati, ex quasi, a dolores laborum, deleniti id ab eveniet quam autem exercitationem? Beatae quos vitae sed voluptate aperiam, voluptates, fugit neque quae architecto laudantium excepturi nobis! Mollitia temporibus, ipsam laboriosam, unde nihil est quia ut laborum voluptate itaque doloremque tempore explicabo sequi blanditiis facilis. Consequatur libero, suscipit porro, neque voluptatum repellendus velit ipsa modi dolore quaerat recusandae, magni veniam temporibus quia? Asperiores, minus? Aspernatur perferendis ab, dolorum quidem nesciunt, eum eos officiis beatae quos optio mollitia dolores?",
+      "modality": "Presencial o Virtual",
+      "img": "./../img/le.jpg"
+    },
+    {"id": 3,
+      "name": "Reiki",
+      "price": 1700,
+      "information":
+        "Técnica mediante la cual un Maestro de Reiki canaliza y transmite energía utilizando sus manos.Busca obtener paz y equilibrio a nivel físico, mental, emocional y espiritual.",
+        "detail": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus voluptatum minus, veritatis illo obcaecati necessitatibus aspernatur? Expedita doloribus dicta voluptatum atque laboriosam obcaecati, ex quasi, a dolores laborum, deleniti id ab eveniet quam autem exercitationem? Beatae quos vitae sed voluptate aperiam, voluptates, fugit neque quae architecto laudantium excepturi nobis! Mollitia temporibus, ipsam laboriosam, unde nihil est quia ut laborum voluptate itaque doloremque tempore explicabo sequi blanditiis facilis. Consequatur libero, suscipit porro, neque voluptatum repellendus velit ipsa modi dolore quaerat recusandae, magni veniam temporibus quia? Asperiores, minus? Aspernatur perferendis ab, dolorum quidem nesciunt, eum eos officiis beatae quos optio mollitia dolores?Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus voluptatum minus, veritatis illo obcaecati necessitatibus aspernatur? Expedita doloribus dicta voluptatum atque laboriosam obcaecati, ex quasi, a dolores laborum, deleniti id ab eveniet quam autem exercitationem? Beatae quos vitae sed voluptate aperiam, voluptates, fugit neque quae architecto laudantium excepturi nobis! Mollitia temporibus, ipsam laboriosam, unde nihil est quia ut laborum voluptate itaque doloremque tempore explicabo sequi blanditiis facilis. Consequatur libero, suscipit porro, neque voluptatum repellendus velit ipsa modi dolore quaerat recusandae, magni veniam temporibus quia? Asperiores, minus? Aspernatur perferendis ab, dolorum quidem nesciunt, eum eos officiis beatae quos optio mollitia dolores?",
+      "modality": "Presencial",
+      "img": "./../img/reiki.jpg"
+    },
+    {"id": 4,
+      "name": "Terapia de sanación",
+      "price": 1300,
+      "information":
+        "Consta de 3 sesiones en las que se busca sanar a través de oraciones y de manera integral al cuerpo espiritual, mental, emocional y físico.Restablece el equilibrio y armonía de los 7 Chakras.",
+      "modality": "Presencial o Virtual",
+      "detail": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus voluptatum minus, veritatis illo obcaecati necessitatibus aspernatur? Expedita doloribus dicta voluptatum atque laboriosam obcaecati, ex quasi, a dolores laborum, deleniti id ab eveniet quam autem exercitationem? Beatae quos vitae sed voluptate aperiam, voluptates, fugit neque quae architecto laudantium excepturi nobis! Mollitia temporibus, ipsam laboriosam, unde nihil est quia ut laborum voluptate itaque doloremque tempore explicabo sequi blanditiis facilis. Consequatur libero, suscipit porro, neque voluptatum repellendus velit ipsa modi dolore quaerat recusandae, magni veniam temporibus quia? Asperiores, minus? Aspernatur perferendis ab, dolorum quidem nesciunt, eum eos officiis beatae quos optio mollitia dolores?Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus voluptatum minus, veritatis illo obcaecati necessitatibus aspernatur? Expedita doloribus dicta voluptatum atque laboriosam obcaecati, ex quasi, a dolores laborum, deleniti id ab eveniet quam autem exercitationem? Beatae quos vitae sed voluptate aperiam, voluptates, fugit neque quae architecto laudantium excepturi nobis! Mollitia temporibus, ipsam laboriosam, unde nihil est quia ut laborum voluptate itaque doloremque tempore explicabo sequi blanditiis facilis. Consequatur libero, suscipit porro, neque voluptatum repellendus velit ipsa modi dolore quaerat recusandae, magni veniam temporibus quia? Asperiores, minus? Aspernatur perferendis ab, dolorum quidem nesciunt, eum eos officiis beatae quos optio mollitia dolores?",
+      "img": "./../img/Sanación.jpg"
+    }
+  ]
+  

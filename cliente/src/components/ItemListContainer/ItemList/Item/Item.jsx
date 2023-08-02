@@ -1,6 +1,8 @@
 import React, { useContext } from "react";
 import "./Item.css";
 import { Link } from "react-router-dom";
+import Button from "react-bootstrap/Button";
+import Card from "react-bootstrap/Card";
 
 const Item = ({ item }) => {
   let settings = {
@@ -12,20 +14,22 @@ const Item = ({ item }) => {
   };
 
   return (
-    <div className="card">
-      <h3 className="card-title">{item.name.toUpperCase()}</h3>
-      <img src={item.img} alt="" className="card-img" />
-      {/* <h4>Price: {item.price}</h4> */}
-      <h4 className="Information">
-        INFORMACIÓN:
-        <br />
-        {item.information.toLowerCase()}
-      </h4>
-      {/* <h3>Modality: {item.modality}</h3> */}
-      <Link to={`/servicios/${item.id}`}>
-        <button className="card-btn">Ver detalles</button>
-      </Link>
-    </div>
+    <Card style={{ width: "25rem" }}>
+      <Card.Img variant="top" src={item.img} />
+      <Card.Body>
+        <Card.Title>{item.name.toUpperCase()}</Card.Title>
+        <Card.Text>
+          <span className="Information" style={{ textDecoration: "underline" }}>
+            INFORMACIÓN:
+          </span>
+          <br />
+          {item.information.toLowerCase()}
+        </Card.Text>
+        <Link to={`/servicios/informacion/${item.id}`}>
+          <Button variant="primary">Ver detalles</Button>
+        </Link>
+      </Card.Body>
+    </Card>
   );
 };
 

@@ -7,6 +7,7 @@ import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailCont
 // import CursosContainer from "./components/cursosContainer/CursosContainer";
 import Contacto from "./components/contacto/Contacto";
 import SobreMi from "./components/paula/SobreMi";
+import "bootstrap/dist/css/bootstrap.min.css";
 // import CursosContainerInfo from "./components/cursosContainerInfo/CursosContainerInfo";
 // import CheckOut from "./components/check-out/CheckOut";
 // import UserProvider from "./components/context/UserProvider";
@@ -21,7 +22,11 @@ function App() {
           <Route path="/" element={<Main />} />
           <Route path="/servicios" element={<ItemListContainer />} />
           <Route
-            path="/servicios/:serviceId"
+            path="/servicios/informacion"
+            element={<ItemDetailContainer />}
+          />
+          <Route
+            path="/servicios/informacion/:serviceId"
             element={<ItemDetailContainer />}
           />
           {/* <Route path="/cursos" element={<CursosContainer />} />
