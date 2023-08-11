@@ -9,6 +9,8 @@ import { useNavigate } from "react-router-dom";
 const ItemDetailContainer = () => {
   const [json, setJson] = useState({});
   const [jsonAll, setJsonAll] = useState([]);
+  const [showDropdown, setShowDropdown] = useState(false);
+  const [showDropMedium, setShowDropMedium] = useState(false);
   // const [cargando, setCargando] = useState(false);
 
   const navigate = useNavigate();
@@ -39,31 +41,59 @@ const ItemDetailContainer = () => {
 
   // console.log(typeof serviceId);
 
+  useEffect(() => {
+    const handleResize = () => {
+      setShowDropdown(window.innerWidth <= 992);
+      // setShowDropMedium(window.innerWidth >= 600);
+    };
+
+    handleResize(); // Verificar el tamaño de la pantalla al cargar la página
+
+    window.addEventListener("resize", handleResize); // Escuchar cambios en el tamaño de la pantalla
+
+    return () => {
+      window.removeEventListener("resize", handleResize); // Limpiar el evento al desmontar el componente
+    };
+  }, []);
+
   return (
     <Container className="overlay" style={{ position: "inherit" }} fluid>
       <Row>
-        <Col md={4}>
+        <Col lg={4} md={12} sm={12} style={{ padding: "0 20px 0 20px" }}>
           <Nav
             id="navbar-example3"
-            className="h-100 flex-column align-items-stretch pe-4 border-end"
+            className={`h-100 flex-column align-items-stretch ${
+              showDropdown ? "" : "pe-4 border-end"
+            }`}
           >
             <Nav className="nav nav-pills flex-column">
-              {jsonAll.map((services) => (
-                <Nav.Link
-                  key={services.id}
-                  onClick={() =>
-                    navigate(`/servicios/informacion/${services.id}`)
-                  }
-                  active={services.id === parseInt(serviceId)}
-                >
-                  {services.name}
-                </Nav.Link>
-              ))}
+              <div
+                className={`bg-light mt-3 ${showDropMedium ? "d-flex" : ""}"`}
+                style={{ borderRadius: "1rem" }}
+              >
+                {" "}
+                {jsonAll.map((services) => (
+                  <Nav.Link
+                    style={{ margin: "10px" }}
+                    key={services.id}
+                    href={`#${services.id}`}
+                    onClick={() =>
+                      navigate(`/servicios/informacion/${services.id}`)
+                    }
+                    active={services.id === parseInt(serviceId)}
+                  >
+                    <p style={{ color: "black" }}>
+                      {" "}
+                      {services.name.toUpperCase()}
+                    </p>
+                  </Nav.Link>
+                ))}
+              </div>
             </Nav>
           </Nav>
         </Col>
 
-        <Col md={8}>
+        <Col lg={8} md={12} sm={12}>
           <div
             data-bs-spy="scroll"
             data-bs-target="#navbar-example3"
@@ -82,8 +112,8 @@ const ItemDetailContainer = () => {
                     services.id === parseInt(serviceId) ? "active" : ""
                   }`}
                 >
-                  <h4 style={{ color: "lightskyblue" }}>{services.name}</h4>
-                  <p style={{ color: "white" }}>{services.detail}</p>
+                  <h4 style={{ color: "black" }}>{services.name}</h4>
+                  <p style={{ color: "black" }}>{services.detail}</p>
                 </li>
               </ul>
             ))}

@@ -14,7 +14,7 @@ const Item = ({ item }) => {
   };
 
   return (
-    <Card style={{ width: "25rem" }}>
+    <Card style={{ width: "20rem" }}>
       <Card.Img variant="top" src={item.img} />
       <Card.Body>
         <Card.Title>{item.name.toUpperCase()}</Card.Title>
