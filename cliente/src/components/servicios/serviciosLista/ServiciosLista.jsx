@@ -2,7 +2,7 @@ import React from "react";
 import Item from "./Item/Item";
 import "./ItemList.css";
 
-const ItemList = ({ services }) => {
+const ServiciosLista = ({ services }) => {
   return (
     <div className="divItemList">
       <div className="mapStyle">
@@ -14,4 +14,4 @@ const ItemList = ({ services }) => {
   );
 };
 
-export default ItemList;
+export default ServiciosLista;

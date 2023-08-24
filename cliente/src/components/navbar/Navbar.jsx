@@ -18,7 +18,9 @@ const NavbarHeader = () => {
   return (
     <Navbar expand="lg" bg="dark" data-bs-theme="dark">
       <Container>
-        <Navbar.Brand href="/">Paula Vidente</Navbar.Brand>
+        <Navbar.Brand as={Link} to="/">
+          Paula Vidente
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto d-flex justify-content-center mx-auto gap-4">
@@ -28,7 +30,7 @@ const NavbarHeader = () => {
             <NavLink eventKey={2} as={Link} to="/servicios">
               Servicios
             </NavLink>
-            <NavLink eventKey={3} as={Link} to="/servicios/informacion">
+            <NavLink eventKey={3} as={Link} to="/informacion">
               Información
             </NavLink>
             <NavLink eventKey={4} as={Link} to="/Contacto">

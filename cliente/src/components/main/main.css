@@ -39,10 +39,19 @@ img {
   margin: auto;
   overflow: hidden;
   padding: 0 2rem;
+  
+}
+
+.parraf {
+  color: white;
 }
 
 .sectiona {
-  margin: 10rem 0;
+  height: 500px;
+  /* margin: 10rem 0; */
+  backdrop-filter: blur(4px) saturate(112%);
+  -webkit-backdrop-filter: blur(4px) saturate(112%);
+  background-color: rgba(74, 74, 74, 0.53);
 }
 .sectiona .container {
   display: grid;
@@ -50,6 +59,8 @@ img {
   grid-gap: 3rem;
   align-items: center;
   justify-content: center;
+  margin: 0 auto;
+  padding-top: 2rem;
 }
 
 .bgblack {
@@ -68,6 +79,8 @@ img {
 .sectionb {
   position: relative;
   height: 550px;
+  backdrop-filter: blur(4px) saturate(112%);
+  -webkit-backdrop-filter: blur(4px) saturate(112%);
 }
 
 .sectionb-inner {
@@ -102,15 +115,19 @@ img {
 }
 
 .sectionc {
-  margin: 10rem 0;
+  height: 550px;
+  backdrop-filter: blur(4px) saturate(112%);
+  -webkit-backdrop-filter: blur(4px) saturate(112%);
+  background-color: rgba(74, 74, 74, 0.53);
 }
-.sectionc .container {
+/* .sectionc .container {
   display: grid;
-  grid-template-columns: 1fr;
-  /* grid-gap: 3rem; */
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 3rem;
   align-items: center;
   justify-content: center;
-}
+  
+} */
 
 .sectionc h2 {
   font-size: 4rem;
@@ -178,6 +195,8 @@ img {
   height: 100%;
   width: 100%;
   background-color: var(--overlay-color);
+  backdrop-filter: blur(4px) saturate(112%);
+  -webkit-backdrop-filter: blur(4px) saturate(112%);
 }
 
 @media (max-width: 700px) {

@@ -5,14 +5,6 @@ import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 
 const Item = ({ item }) => {
-  let settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-  };
-
   return (
     <Card style={{ width: "20rem" }}>
       <Card.Img variant="top" src={item.img} />
@@ -25,7 +17,7 @@ const Item = ({ item }) => {
           <br />
           {item.information.toLowerCase()}
         </Card.Text>
-        <Link to={`/servicios/informacion/${item.id}`}>
+        <Link to={`/informacion/${item.id}`}>
           <Button variant="primary">Ver detalles</Button>
         </Link>
       </Card.Body>

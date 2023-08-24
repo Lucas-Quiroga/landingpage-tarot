@@ -30,11 +30,7 @@ const SobreMi = () => {
             capitulo...
           </div>
         </div>
-        {/* <div className="imagendiv">
-        <img src={iconoweb} alt="" srcset="" className="imgmadre" />
-      </div> */}
       </section>
-      <Footer />
     </>
   );
 };
