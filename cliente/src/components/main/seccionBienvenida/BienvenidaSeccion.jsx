@@ -1,12 +1,13 @@
 import React from "react";
 import cartas from "./cartas.jpg";
 import { Link } from "react-router-dom";
+import { Container, Row, Col, Image } from "react-bootstrap";
 
 const BienvenidaSeccion = () => {
   return (
-    <section id="home" className="sectiona">
-      <div className="container">
-        <div>
+    <Container className="sectiona" style={{ overflow: "hidden" }} fluid>
+      <Row className="container">
+        <Col>
           <h1 className="container__h1">Hola, soy Paula Dominguez</h1>
           <p className="parraf">
             Bienvenidos a la magia que guarda todas las respuestas que habitan
@@ -16,11 +17,22 @@ const BienvenidaSeccion = () => {
           <Link to={"/sobreMi"} className="btn btn-secondary">
             Sobre mi
           </Link>
-        </div>
-        <img id="header-img" src={cartas} alt="cartas" />
-      </div>
-    </section>
+        </Col>
+        <Col>
+          <Image src={cartas} className="imagenCartas" />
+        </Col>
+      </Row>
+    </Container>
   );
 };
 
 export default BienvenidaSeccion;
+
+/* <section id="home" className="sectiona">
+<div className="container">
+  <div>
+   
+  </div>
+  <img id="header-img" src={cartas} alt="cartas" />
+</div>
+</section> */

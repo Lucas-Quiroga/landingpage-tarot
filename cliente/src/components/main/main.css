@@ -53,6 +53,7 @@ img {
   -webkit-backdrop-filter: blur(4px) saturate(112%);
   background-color: rgba(74, 74, 74, 0.53);
 }
+
 .sectiona .container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -199,10 +200,14 @@ img {
   -webkit-backdrop-filter: blur(4px) saturate(112%);
 }
 
-@media (max-width: 700px) {
+@media (max-width: 760px) {
   .sectiona .container {
     grid-template-columns: 1fr;
     text-align: center;
+  }
+
+  .imagenCartas{
+    display: none;
   }
 
   .sectiona .container div:first-child {

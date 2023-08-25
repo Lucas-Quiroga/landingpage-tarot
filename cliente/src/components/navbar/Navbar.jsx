@@ -1,23 +1,17 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React from "react";
+import { Link, useLocation } from "react-router-dom";
 import "./navbar.css";
-import icon from "./tarot.jpg";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavLink from "react-bootstrap/esm/NavLink";
-import NavDropdown from "react-bootstrap/NavDropdown";
 
 const NavbarHeader = () => {
-  const [active, setActive] = useState(false);
-
-  const handleClick = () => {
-    setActive(!active);
-  };
+  const location = useLocation();
 
   return (
-    <Navbar expand="lg" bg="dark" data-bs-theme="dark">
-      <Container>
+    <Navbar expand="lg" bg="dark" data-bs-theme="dark" sticky="top">
+      <Container className="p-1">
         <Navbar.Brand as={Link} to="/">
           Paula Vidente
         </Navbar.Brand>
@@ -27,16 +21,31 @@ const NavbarHeader = () => {
             <NavLink eventKey={1} as={Link} to="/">
               Inicio
             </NavLink>
-            <NavLink eventKey={2} as={Link} to="/servicios">
+            <NavLink
+              eventKey={2}
+              as={Link}
+              to="/servicios"
+              style={{
+                color: `${
+                  location.pathname.includes("/servicios")
+                    ? "#fff"
+                    : "#FFFFFF8C"
+                }`,
+              }}
+            >
               Servicios
             </NavLink>
-            <NavLink eventKey={3} as={Link} to="/informacion">
+            <NavLink
+              eventKey={3}
+              as={Link}
+              to="/informacion"
+              className={`${
+                location.pathname.includes("/informacion") ? "active" : ""
+              }`}
+            >
               Información
             </NavLink>
-            <NavLink eventKey={4} as={Link} to="/Contacto">
-              Contacto
-            </NavLink>
-            <NavLink eventKey={5} as={Link} to="/sobreMi">
+            <NavLink eventKey={4} as={Link} to="/sobreMi">
               Sobre mi
             </NavLink>
           </Nav>

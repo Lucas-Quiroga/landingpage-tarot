@@ -24,6 +24,9 @@ function Testimonios() {
               clickable: true,
             }}
             breakpoints={{
+              300: {
+                slidesPerView: 2,
+              },
               576: {
                 slidesPerView: 2,
               },

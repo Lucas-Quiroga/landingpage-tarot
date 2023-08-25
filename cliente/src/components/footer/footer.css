@@ -1,7 +1,18 @@
 footer {
-  background-color: #f8f8f8;
+  background-color: #212529;
   padding: 10px;
-  height: 360px;
+  height: 200px;
+}
+
+footer > div.container > div.row > div.col-12,
+footer > div.container > section,
+footer > div.container > div {
+  color: white; /* Establece el color de todos los hijos a negro */
+}
+
+footer > div.container > div.row > div.col-12 ,
+footer > div.container > section  {
+  color: white; /* Establece el color de los elementos de texto en blanco, excepto el último hijo */
 }
 
 .container {

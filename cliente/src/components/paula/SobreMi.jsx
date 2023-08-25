@@ -1,12 +1,10 @@
 import React from "react";
 import "./SobreMi.css";
-import Footer from "./../footer/Footer";
-import iconoweb from "./../../assets/iconomadre.png";
 
 const SobreMi = () => {
   return (
     <>
-      <section id="about" className="sectionc">
+      <section id="about" className="sectionc h-100 mt-5">
         <div className="overlay_a">
           <div className="sectionb-inner">
             <h2>Hola!</h2>
