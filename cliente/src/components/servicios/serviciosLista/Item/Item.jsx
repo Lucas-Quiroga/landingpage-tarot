@@ -31,6 +31,12 @@ const Item = ({ item }) => {
       <Card.Img variant="top" src={item.img} />
       <Card.Body className="d-flex flex-column justify-content-between">
         <Card.Title>{item.name.toUpperCase()}</Card.Title>
+        <Card.Text>
+          {item.price.toLocaleString("es-AR", {
+            style: "currency",
+            currency: "ARS",
+          })}
+        </Card.Text>
         <Card.Text>{item.information.toLowerCase()}</Card.Text>
         <Card.Footer>
           <Link to={`/informacion/${item.id}`}>
@@ -76,10 +82,10 @@ const Item = ({ item }) => {
               onChange={agarrarDatosDelUsuario}
             >
               <option value={itemSeleccionado}>{itemSeleccionado}</option>
-              <option disabled>--- Otros Servicios ---</option>
+              <option disabled>--- Otros servicios ---</option>
               {[
                 "Lectura de tarot",
-                "Limpieza energetica",
+                "Limpieza energética",
                 "Reiki",
                 "Terapia de sanación",
               ].map(

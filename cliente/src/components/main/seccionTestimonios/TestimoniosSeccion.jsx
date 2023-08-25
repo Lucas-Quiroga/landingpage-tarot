@@ -13,7 +13,9 @@ function Testimonios() {
           <h1 className="section__title" style={{ color: "white" }}>
             Mis pacientes
           </h1>
-          <span className="section__subtitle">Testimonios</span>
+          <span className="section__subtitle" style={{ color: "#fffff" }}>
+            Testimonios
+          </span>
           <Swiper
             className="testimonial__container"
             loop={true}

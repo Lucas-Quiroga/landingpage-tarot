@@ -218,13 +218,27 @@ img {
     order: -1;
   }
 
+  .parraf{
+    font-size: 1rem;
+  }
+
   .sectiona img {
     width: 80%;
     margin: auto;
   }
 
+  .sectionb-inner h3 {
+    font-size: 2rem;
+  }
+
   .sectionb-inner h2 {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
+    padding: 1rem;
+  }
+
+  .sectionb-inner p {
+    font-size: 1.5rem;
+    padding: 1rem;
   }
 
   /* .sectionc .gallery {
@@ -235,5 +249,13 @@ img {
   .section-footer .container {
     grid-template-columns: 1fr;
     text-align: center;
+  }
+
+  .section__title{
+    font-size: 2rem;
+  }
+
+  .section__subtitle{
+    font-size: 1.2rem;
   }
 }

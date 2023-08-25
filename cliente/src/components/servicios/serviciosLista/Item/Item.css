@@ -33,14 +33,14 @@
   margin: 0 auto;
   background: #ffffff;
   color: black;
-  margin-top: 8rem;
+  margin-top: 4rem;
   margin-bottom: 3rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  transition: transform 0.3s ease-in-out;
+  /* transition: transform 0.3s ease-in-out; */
   /* mix-blend-mode; */
 }
 
@@ -79,6 +79,6 @@
   box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
 }
 
-.card:hover {
+/* .card:hover {
   transform: scale(1.1);
-}
+} */

@@ -3,12 +3,16 @@ import serviciosJson from "../../json/servicesJson.json";
 import { useParams } from "react-router-dom";
 import { Container, Row, Col, Nav } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
+import Dropdown from "react-bootstrap/Dropdown";
+import DropdownButton from "react-bootstrap/DropdownButton";
+import "./Información.css";
 
 const Información = () => {
   const { serviceId } = useParams();
   const [servicios, setServicios] = useState([]);
   const [servicioSeleccionado, setServicioSeleccionado] = useState(null);
   const [esMobile, setEsMobile] = useState(false);
+  const [mobileReferencia, setMobileReferencia] = useState(false);
 
   const navigate = useNavigate();
 
@@ -23,7 +27,11 @@ const Información = () => {
     if (servicioSeleccionado) {
       const elemento = document.getElementById(`${servicioSeleccionado.id}`);
       if (elemento) {
-        elemento.scrollIntoView();
+        elemento.scrollIntoView({
+          behavior: "instant",
+          block: "center",
+          inline: "center",
+        });
       }
     }
   }, [servicioSeleccionado]);
@@ -31,6 +39,7 @@ const Información = () => {
   useEffect(() => {
     const manejarResize = () => {
       setEsMobile(window.innerWidth <= 992);
+      setMobileReferencia(window.innerWidth <= 500);
     };
 
     manejarResize();
@@ -45,32 +54,49 @@ const Información = () => {
     <Container className="overlay" style={{ position: "inherit" }} fluid>
       <Row>
         <Col lg={4} md={12} sm={12} style={{ padding: "0 20px 0 20px" }}>
-          <Nav
-            id="navbar-example3"
-            className={`h-100 flex-column align-items-stretch ${
-              esMobile ? "" : "pe-4 border-end"
-            }`}
-          >
-            <Nav className="nav nav-pills flex-column">
-              <div
-                className={`bg-light mt-3 ${esMobile ? "d-flex" : ""}"`}
-                style={{ borderRadius: "1rem" }}
+          {mobileReferencia ? (
+            <div className="d-flex justify-content-center mt-3">
+              <DropdownButton
+                drop="down-centered"
+                align="start"
+                title="Otros servicios"
+                id="dropdown-menu-align-end"
               >
-                {servicios.map((servicio) => (
-                  <Nav.Link
-                    style={{ margin: "10px" }}
-                    key={servicio.id}
-                    onClick={() => navigate(`/informacion/${servicio.id}`)}
-                    active={servicio.id === parseInt(serviceId)}
-                  >
-                    <p style={{ color: "black" }}>
-                      {servicio.name.toUpperCase()}
-                    </p>
-                  </Nav.Link>
-                ))}
-              </div>
+                <Dropdown.Item eventKey="1">Action</Dropdown.Item>
+                <Dropdown.Item eventKey="2">Another action</Dropdown.Item>
+                <Dropdown.Item eventKey="3">Something else here</Dropdown.Item>
+                <Dropdown.Divider />
+                <Dropdown.Item eventKey="4">Separated link</Dropdown.Item>
+              </DropdownButton>
+            </div>
+          ) : (
+            <Nav
+              id="navbar-example3"
+              className={`h-100 flex-column align-items-stretch ${
+                esMobile ? "" : "pe-4 border-end"
+              }`}
+            >
+              <Nav className="nav nav-pills flex-column">
+                <div
+                  className={`bg-light mt-3 ${esMobile ? "d-flex" : ""}"`}
+                  style={{ borderRadius: "1rem" }}
+                >
+                  {servicios.map((servicio) => (
+                    <Nav.Link
+                      style={{ margin: "10px" }}
+                      key={servicio.id}
+                      onClick={() => navigate(`/informacion/${servicio.id}`)}
+                      active={servicio.id === parseInt(serviceId)}
+                    >
+                      <p style={{ color: "black" }}>
+                        {servicio.name.toUpperCase()}
+                      </p>
+                    </Nav.Link>
+                  ))}
+                </div>
+              </Nav>
             </Nav>
-          </Nav>
+          )}
         </Col>
 
         <Col lg={8} md={12} sm={12}>
