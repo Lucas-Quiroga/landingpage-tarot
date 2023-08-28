@@ -5,6 +5,15 @@
   left: 80rem;
 } */
 
+@media screen and (max-width: 576px) {
+ .sectionb-inner h1{
+  font-size: 3rem;
+ }
+ .sectionb-inner p{
+  font-size: 1.2rem;
+ }
+}
+
 .overlay_a {
   position: relative;
   top: 0;

@@ -13,27 +13,34 @@ function Testimonios() {
           <h1 className="section__title" style={{ color: "white" }}>
             Mis pacientes
           </h1>
-          <span className="section__subtitle" style={{ color: "#fffff" }}>
-            Testimonios
+          <span className="section__subtitle" style={{ color: "white" }}>
+            Algunos testimonios
           </span>
           <Swiper
             className="testimonial__container"
             loop={true}
             grabCursor={true}
-            slidesPerView={4}
+            slidesPerView={1}
             spaceBetween={20}
             pagination={{
               clickable: true,
             }}
             breakpoints={{
-              300: {
-                slidesPerView: 2,
-              },
+              // Cambia la cantidad de testimonios mostrados en diferentes tamaños de pantalla
               576: {
-                slidesPerView: 2,
+                slidesPerView: 2, // Mostrar 2 testimonios en pantallas de 576px o más
+                spaceBetween: 20,
               },
               768: {
-                slidesPerView: 3,
+                slidesPerView: 2, // Mostrar 3 testimonios en pantallas de 768px o más
+                spaceBetween: 48,
+              },
+              992: {
+                slidesPerView: 4, // Mostrar 4 testimonios en pantallas de 992px o más
+                spaceBetween: 48,
+              },
+              1500: {
+                slidesPerView: 3, // Mostrar 4 testimonios en pantallas de 992px o más
                 spaceBetween: 48,
               },
             }}

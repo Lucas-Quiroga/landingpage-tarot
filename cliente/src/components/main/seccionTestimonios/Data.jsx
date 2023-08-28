@@ -1,35 +1,36 @@
-import Image1 from "./../../../assets/testimonial1.png";
-import Image2 from "./../../../assets/testimonial2.png";
-import Image3 from "./../../../assets/testimonial3.png";
+import Image1 from "./../../../assets/camilapablos.png";
+import Image2 from "./../../../assets/isabelsilva.png";
+import Image3 from "./../../../assets/yannina.png";
+import Image4 from "./../../../assets/marcela.png";
 
 export const Data = [
   {
     id: 1,
     image: Image1,
-    title: "Jhon Doe",
+    title: "Camila Pablos",
     description:
-      "A really good job, all aspects of the project were followed step by step and with good results.",
+      "Me encantó hacer el curso de tarot con Pau. Fue súper entretenido, completo y dinámico. Estuvo explicado con paciencia y dedicándole mucho tiempo. En cuanto a mi tirada personal, me encantó. Volvería a hacer ambas cosas con ella.💗",
   },
   {
     id: 2,
     image: Image2,
-    title: "Harry Clinton",
+    title: "Isabel Silva",
     description:
-      "A really good job, all aspects of the project were followed step by step and with good results.",
+      "Maravillosa experiencia desde la profesionalidad que conoces, como también desde la capacidad de la profesora para transmitir su conocimiento en la práctica del saber.",
   },
   {
     id: 3,
     image: Image3,
-    title: "Sara Cill",
+    title: "Yanina Guzman",
     description:
-      "A really good job, all aspects of the project were followed step by step and with good results.",
+      "Desde que conocí a Paula, me ha ayudado a mejorar muchos aspectos de mi vida. Es una gran persona con un don mágico en esta tierra y como paciente y estudiante suyo, agradezco a la vida haberme permitido conocerla.",
   },
   {
     id: 4,
-    image: Image3,
-    title: "Messi",
+    image: Image4,
+    title: "Marcela",
     description:
-      "A really good job, all aspects of the project were followed step by step and with good results.",
+      "Hola, mi nombre es Marcela y soy alumna de Paula. Me encanta porque sus clases son dinámicas, y ella siempre está dispuesta a brindarnos todos sus conocimientos y aclararnos dudas no solo durante las clases, sino en cualquier momento.",
   },
   {
     id: 5,

@@ -200,6 +200,22 @@ img {
   -webkit-backdrop-filter: blur(4px) saturate(112%);
 }
 
+
+@media screen and (max-width: 768px) {
+  .sectionb-inner h3{
+    /* background-color: red; */
+    font-size: 2;
+  }
+  .sectionb-inner h2{
+    font-size: 4rem;
+  }
+  .sectionb-inner p{
+    font-size: 1.3rem;
+  }
+}
+
+
+
 @media (max-width: 760px) {
   .sectiona .container {
     grid-template-columns: 1fr;

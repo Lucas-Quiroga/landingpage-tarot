@@ -5,6 +5,7 @@ import { Container, Row, Col, Nav } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import Dropdown from "react-bootstrap/Dropdown";
 import DropdownButton from "react-bootstrap/DropdownButton";
+import { Accordion } from "react-bootstrap";
 import "./Información.css";
 
 const Información = () => {
@@ -55,19 +56,27 @@ const Información = () => {
       <Row>
         <Col lg={4} md={12} sm={12} style={{ padding: "0 20px 0 20px" }}>
           {mobileReferencia ? (
-            <div className="d-flex justify-content-center mt-3">
-              <DropdownButton
-                drop="down-centered"
-                align="start"
-                title="Otros servicios"
-                id="dropdown-menu-align-end"
-              >
-                <Dropdown.Item eventKey="1">Action</Dropdown.Item>
-                <Dropdown.Item eventKey="2">Another action</Dropdown.Item>
-                <Dropdown.Item eventKey="3">Something else here</Dropdown.Item>
-                <Dropdown.Divider />
-                <Dropdown.Item eventKey="4">Separated link</Dropdown.Item>
-              </DropdownButton>
+            <div className="mt-3">
+              <Accordion defaultActiveKey="0">
+                <Accordion.Item eventKey="0">
+                  <Accordion.Header>Otros servicios</Accordion.Header>
+                  <Accordion.Body>
+                    <Nav className="d-flex flex-column">
+                      {servicios.map((servicio) => (
+                        <Nav.Link
+                          key={servicio.id}
+                          onClick={() =>
+                            navigate(`/informacion/${servicio.id}`)
+                          }
+                          active={servicio.id === parseInt(serviceId)}
+                        >
+                          {servicio.name.toUpperCase()}
+                        </Nav.Link>
+                      ))}
+                    </Nav>
+                  </Accordion.Body>
+                </Accordion.Item>
+              </Accordion>
             </div>
           ) : (
             <Nav

@@ -20,7 +20,7 @@ function App() {
           <Route path="/informacion/:serviceId" element={<Información />} />
           <Route path="/SobreMi" element={<SobreMi />} />
         </Routes>
-        <Footer />
+        {/* <Footer /> */}
       </BrowserRouter>
     </div>
   );

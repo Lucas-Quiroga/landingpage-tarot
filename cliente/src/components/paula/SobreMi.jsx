@@ -4,28 +4,34 @@ import "./SobreMi.css";
 const SobreMi = () => {
   return (
     <>
-      <section id="about" className="sectionc h-100 mt-5">
+      <section id="about" className="sectionc h-100">
         <div className="overlay_a">
           <div className="sectionb-inner">
-            <h2>Hola!</h2>
-            <p>
-              Soy Paula tarotista y vidente, desde chiquita mis ojos veían cosas
-              que los demás no podian observar. Con el paso de los años se me
-              fueron revelando las respuestas que necesitaba y hoy me trajeron
-              hasta aca. El tarot marco un antes y un despúes para mi. Las
-              cartas se pegaron a mi mano almorazando mi camino con ellas.
-            </p>
-            <br />
-            Desde el 2004, en mi escuela de conocimiento inicie en los
-            misterios, buscando mi expansión espiritual para entender y
-            comprender las almas que me rodean. De esta forma llegue al tarot
-            como vehiculo de luz, clarificador y orientador.
-            <br />
-            Mi meta es llegar a vos o tu profundidad interior y aportarte esa
-            guía para que puedas fluir mejor y desanudar lo que te desafie.
-            <br />
-            Acompañame, siento tu energia, vamos a descubrir un nuevo
-            capitulo...
+            <h1>¡Hola!</h1>
+            <div>
+              <p>
+                Soy Paula, tarotista y vidente. Desde pequeña, mis ojos veían
+                cosas que los demás no podían observar. Con el paso de los años,
+                las respuestas que necesitaba se me fueron revelando y hoy me
+                han traído hasta aquí. El tarot marcó un antes y un después para
+                mí. Las cartas se aferraron a mi mano, iluminando mi camino con
+                ellas.
+              </p>
+              <br />
+              <p>
+                Desde el 2004, en mi escuela de conocimiento, inicié en los
+                misterios, buscando mi expansión espiritual para entender y
+                comprender las almas que me rodean. De esta forma, llegué al
+                tarot como vehículo de luz, claridad y orientación. Mi meta es
+                llegar a vos, a tu profundidad interior, y proporcionarte esa
+                guía para que puedas fluir mejor y desatar lo que te desafía.
+              </p>
+              <br />
+              <p>
+                Acompáñame, siento tu energía, vamos a descubrir un nuevo
+                capítulo...
+              </p>
+            </div>
           </div>
         </div>
       </section>
