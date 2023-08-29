@@ -107,7 +107,7 @@ const Item = ({ item }) => {
             variant="primary"
             href={`https://api.whatsapp.com/send?phone=541127877943&text=Hola%20mi%20nombre%20es%20${
               datosUsuario.nombre
-            }%2C%20estoy%20interesadx%20en%20${
+            }%2C%20me%20interesa%20el%20servicio%20de%20${
               datosUsuario.servicio || itemSeleccionado
             }%20😊`}
             target="_blanck"

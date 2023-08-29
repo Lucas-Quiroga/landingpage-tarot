@@ -3,8 +3,6 @@ import serviciosJson from "../../json/servicesJson.json";
 import { useParams } from "react-router-dom";
 import { Container, Row, Col, Nav } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
-import Dropdown from "react-bootstrap/Dropdown";
-import DropdownButton from "react-bootstrap/DropdownButton";
 import { Accordion } from "react-bootstrap";
 import "./Información.css";
 
@@ -87,7 +85,7 @@ const Información = () => {
             >
               <Nav className="nav nav-pills flex-column">
                 <div
-                  className={`bg-light mt-3 ${esMobile ? "d-flex" : ""}"`}
+                  className={`bg-light mt-3 ${esMobile ? "d-flex" : ""}`}
                   style={{ borderRadius: "1rem" }}
                 >
                   {servicios.map((servicio) => (
@@ -119,7 +117,7 @@ const Información = () => {
             {servicios.map((servicio) => (
               <ul
                 key={servicio.id}
-                className="list-group"
+                className="list-group mt-2"
                 id={`${servicio.id}`}
               >
                 <li

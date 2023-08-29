@@ -36,7 +36,7 @@ function Testimonios() {
                 spaceBetween: 48,
               },
               992: {
-                slidesPerView: 4, // Mostrar 4 testimonios en pantallas de 992px o más
+                slidesPerView: 3, // Mostrar 4 testimonios en pantallas de 992px o más
                 spaceBetween: 48,
               },
               1500: {

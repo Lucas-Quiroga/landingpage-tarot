@@ -1,13 +1,32 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./SobreMi.css";
 
 const SobreMi = () => {
+  const [mobileReferencia, setMobileReferencia] = useState(false);
+
+  useEffect(() => {
+    const manejarResize = () => {
+      setMobileReferencia(window.innerWidth <= 500);
+    };
+
+    manejarResize();
+    window.addEventListener("resize", manejarResize);
+
+    return () => {
+      window.removeEventListener("resize", manejarResize);
+    };
+  }, []);
+
   return (
     <>
       <section id="about" className="sectionc h-100">
         <div className="overlay_a">
-          <div className="sectionb-inner">
-            <h1>¡Hola!</h1>
+          <div
+            className={`${
+              mobileReferencia ? "sectionb-inner" : "section_sobremi"
+            }`}
+          >
+            <h1>¡Un gusto!</h1>
             <div>
               <p>
                 Soy Paula, tarotista y vidente. Desde pequeña, mis ojos veían
