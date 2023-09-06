@@ -5,7 +5,7 @@ import Main from "./components/main/Main";
 import Servicios from "./components/servicios/Servicios";
 import Información from "./components/información/Información";
 import SobreMi from "./components/paula/SobreMi";
-import Footer from "./components/footer/Footer";
+// import Footer from "./components/footer/Footer";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {

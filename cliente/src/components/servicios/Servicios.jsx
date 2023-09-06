@@ -25,7 +25,7 @@ const Servicios = () => {
   }, []);
 
   return (
-    <div className={`overlay_a ${esGrande ? "" : "pt-4"}`}>
+    <div className={`overlay_a h-100 ${esGrande ? "" : "pt-4"}`}>
       <ServiciosLista services={services} />
     </div>
   );

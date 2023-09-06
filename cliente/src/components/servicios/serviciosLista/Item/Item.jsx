@@ -40,12 +40,12 @@ const Item = ({ item }) => {
         <Card.Text>{item.information.toLowerCase()}</Card.Text>
         <Card.Footer>
           <Link to={`/informacion/${item.id}`}>
-            <Button variant="primary" className="w-100">
+            <Button variant="secondary" className="w-100">
               Ver detalles
             </Button>
           </Link>
           <Button
-            variant="primary"
+            variant="dark"
             className="w-100"
             onClick={() => agarrarItem(item.name)}
           >

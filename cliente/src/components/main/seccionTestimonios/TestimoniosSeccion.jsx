@@ -7,7 +7,7 @@ import { Pagination } from "swiper";
 
 function Testimonios() {
   return (
-    <section id="home" className="sectionc">
+    <section id="home" className="sectionc h-100">
       <div className="container pt-5">
         <section className="testimonial container section">
           <h1 className="section__title" style={{ color: "white" }}>
