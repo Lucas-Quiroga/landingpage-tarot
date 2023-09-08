@@ -3,6 +3,7 @@ import Image2 from "./../../../assets/isabelsilva.png";
 import Image3 from "./../../../assets/yannina.png";
 import Image4 from "./../../../assets/marcela.png";
 import Image5 from "./../../../assets/sabrina.png";
+import Image6 from "./../../../assets/gaby.png";
 
 export const Data = [
   {
@@ -40,13 +41,13 @@ export const Data = [
     description:
       "Comencé como paciente y quedé cautivada por su desempeño y exactitud en sus tiradas. Tanto así que decidí convertirme en su alumna y adentrarme de su mano en este maravilloso mundo! Gracias Pau por tantos conocimientos y hermosas experiencias, por tus palabras justas en cada situación y por estar siempre cerca cuando te necesito! Sos una excelente profesional con un brillo excepcional, te quiero mucho ❤️",
   },
-  // {
-  //   id: 6,
-  //   image: Image3,
-  //   title: "YONY",
-  //   description:
-  //     "A really good job, all aspects of the project were followed step by step and with good results.",
-  // },
+  {
+    id: 6,
+    image: Image6,
+    title: "Gabriela Mete",
+    description:
+      "¡Hola! Estoy muy contenta y agradecida de haber conocido a Paula. La verdad es que me cambió un montón. A veces, cuando uno está en una situación amorosa complicada, se encuentra vulnerable y recurre a todo. Por suerte, se me cruzó Paula, que además de tener una claridad increíble tanto en videncia (doy fe de que todo lo que me dijo que iba a pasar sucedió en el mismo día, ¡increíble!) como en el tarot y en la sanación. Lo que hace realmente es espectacular, porque pensé que no podría superarlo, pero salí adelante sin necesidad de hacer cosas raras ni dañar a nadie. Ahora, cada vez que encuentro a alguien en problemas, le recomiendo a Paula. 🥰😊🙏💙❤️💜 Es la mejor de todas.",
+  },
   // {
   //   id: 7,
   //   image: Image3,
