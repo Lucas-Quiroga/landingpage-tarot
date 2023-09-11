@@ -37,7 +37,7 @@ const Item = ({ item }) => {
             currency: "ARS",
           })}
         </Card.Text>
-        <Card.Text>{item.information.toLowerCase()}</Card.Text>
+        <Card.Text>{item.information}</Card.Text>
         <Card.Footer>
           <Link to={`/informacion/${item.id}`}>
             <Button variant="secondary" className="w-100">
