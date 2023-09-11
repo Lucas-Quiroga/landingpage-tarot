@@ -95,7 +95,15 @@ const Información = () => {
                       onClick={() => navigate(`/informacion/${servicio.id}`)}
                       active={servicio.id === parseInt(serviceId)}
                     >
-                      <p style={{ color: "black" }}>
+                      <p
+                        style={{
+                          color: `${
+                            servicio.id === parseInt(serviceId)
+                              ? "white"
+                              : "black"
+                          }`,
+                        }}
+                      >
                         {servicio.name.toUpperCase()}
                       </p>
                     </Nav.Link>
@@ -126,7 +134,15 @@ const Información = () => {
                   }`}
                 >
                   <h4 style={{ color: "black" }}>{servicio.name}</h4>
-                  <p style={{ color: "black" }}>{servicio.detail}</p>
+                  <p
+                    style={{
+                      color: `${
+                        servicio.id === parseInt(serviceId) ? "white" : "black"
+                      }`,
+                    }}
+                  >
+                    {servicio.detail}
+                  </p>
                 </li>
               </ul>
             ))}
