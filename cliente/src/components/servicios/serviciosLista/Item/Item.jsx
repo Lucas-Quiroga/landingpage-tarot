@@ -31,12 +31,7 @@ const Item = ({ item }) => {
       <Card.Img variant="top" src={item.img} />
       <Card.Body className="d-flex flex-column justify-content-between">
         <Card.Title>{item.name.toUpperCase()}</Card.Title>
-        <Card.Text>
-          {item.price.toLocaleString("es-AR", {
-            style: "currency",
-            currency: "ARS",
-          })}
-        </Card.Text>
+
         <Card.Text>{item.information}</Card.Text>
         <Card.Footer>
           <Link to={`/informacion/${item.id}`}>
